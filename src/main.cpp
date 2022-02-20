@@ -1,6 +1,7 @@
 #include "graphics/Window.h"
 #include "iostream"
 #include "graphics/WindowManager.h"
+#include "imgui.h"
 
 int main()
 {
@@ -12,5 +13,6 @@ int main()
 
     WindowManager::init();
 
+    ImGui::SFML::Shutdown();
     return 0;
 }

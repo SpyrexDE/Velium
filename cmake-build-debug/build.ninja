@@ -75,20 +75,58 @@ build cmake_object_order_depends_target_Velium: phony || CMakeFiles/Velium.dir
 build CMakeFiles/Velium.dir/src/main.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/Velium/src/main.cpp || cmake_object_order_depends_target_Velium
   DEP_FILE = CMakeFiles/Velium.dir/src/main.cpp.o.d
   FLAGS = -g -std=gnu++23
+  INCLUDES = -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui
   OBJECT_DIR = CMakeFiles/Velium.dir
   OBJECT_FILE_DIR = CMakeFiles/Velium.dir/src
 
 build CMakeFiles/Velium.dir/src/graphics/Window.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/Velium/src/graphics/Window.cpp || cmake_object_order_depends_target_Velium
   DEP_FILE = CMakeFiles/Velium.dir/src/graphics/Window.cpp.o.d
   FLAGS = -g -std=gnu++23
+  INCLUDES = -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui
   OBJECT_DIR = CMakeFiles/Velium.dir
   OBJECT_FILE_DIR = CMakeFiles/Velium.dir/src/graphics
 
 build CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/Velium/src/graphics/WindowManager.cpp || cmake_object_order_depends_target_Velium
   DEP_FILE = CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.o.d
   FLAGS = -g -std=gnu++23
+  INCLUDES = -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui
   OBJECT_DIR = CMakeFiles/Velium.dir
   OBJECT_FILE_DIR = CMakeFiles/Velium.dir/src/graphics
+
+build CMakeFiles/Velium.dir/lib/imgui/imgui.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/Velium/lib/imgui/imgui.cpp || cmake_object_order_depends_target_Velium
+  DEP_FILE = CMakeFiles/Velium.dir/lib/imgui/imgui.cpp.o.d
+  FLAGS = -g -std=gnu++23
+  INCLUDES = -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui
+  OBJECT_DIR = CMakeFiles/Velium.dir
+  OBJECT_FILE_DIR = CMakeFiles/Velium.dir/lib/imgui
+
+build CMakeFiles/Velium.dir/lib/imgui/imgui_draw.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/Velium/lib/imgui/imgui_draw.cpp || cmake_object_order_depends_target_Velium
+  DEP_FILE = CMakeFiles/Velium.dir/lib/imgui/imgui_draw.cpp.o.d
+  FLAGS = -g -std=gnu++23
+  INCLUDES = -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui
+  OBJECT_DIR = CMakeFiles/Velium.dir
+  OBJECT_FILE_DIR = CMakeFiles/Velium.dir/lib/imgui
+
+build CMakeFiles/Velium.dir/lib/imgui/imgui_tables.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/Velium/lib/imgui/imgui_tables.cpp || cmake_object_order_depends_target_Velium
+  DEP_FILE = CMakeFiles/Velium.dir/lib/imgui/imgui_tables.cpp.o.d
+  FLAGS = -g -std=gnu++23
+  INCLUDES = -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui
+  OBJECT_DIR = CMakeFiles/Velium.dir
+  OBJECT_FILE_DIR = CMakeFiles/Velium.dir/lib/imgui
+
+build CMakeFiles/Velium.dir/lib/imgui/imgui_widgets.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/Velium/lib/imgui/imgui_widgets.cpp || cmake_object_order_depends_target_Velium
+  DEP_FILE = CMakeFiles/Velium.dir/lib/imgui/imgui_widgets.cpp.o.d
+  FLAGS = -g -std=gnu++23
+  INCLUDES = -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui
+  OBJECT_DIR = CMakeFiles/Velium.dir
+  OBJECT_FILE_DIR = CMakeFiles/Velium.dir/lib/imgui
+
+build CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/Velium/lib/imgui/imgui-SFML.cpp || cmake_object_order_depends_target_Velium
+  DEP_FILE = CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.o.d
+  FLAGS = -g -std=gnu++23
+  INCLUDES = -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui
+  OBJECT_DIR = CMakeFiles/Velium.dir
+  OBJECT_FILE_DIR = CMakeFiles/Velium.dir/lib/imgui
 
 
 # =============================================================================
@@ -98,9 +136,9 @@ build CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.o: CXX_COMPILER__Veli
 #############################################
 # Link the executable Velium
 
-build Velium: CXX_EXECUTABLE_LINKER__Velium_Debug CMakeFiles/Velium.dir/src/main.cpp.o CMakeFiles/Velium.dir/src/graphics/Window.cpp.o CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.o
+build Velium: CXX_EXECUTABLE_LINKER__Velium_Debug CMakeFiles/Velium.dir/src/main.cpp.o CMakeFiles/Velium.dir/src/graphics/Window.cpp.o CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.o CMakeFiles/Velium.dir/lib/imgui/imgui.cpp.o CMakeFiles/Velium.dir/lib/imgui/imgui_draw.cpp.o CMakeFiles/Velium.dir/lib/imgui/imgui_tables.cpp.o CMakeFiles/Velium.dir/lib/imgui/imgui_widgets.cpp.o CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.o
   FLAGS = -g
-  LINK_LIBRARIES = -lsfml-graphics  -lsfml-window  -lsfml-system  -lsfml-network  -lsfml-audio
+  LINK_LIBRARIES = -lGL  -lsfml-network  -lsfml-graphics  -lsfml-window  -lsfml-system  -lsfml-audio
   OBJECT_DIR = CMakeFiles/Velium.dir
   POST_BUILD = :
   PRE_LINK = :

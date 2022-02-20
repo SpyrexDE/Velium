@@ -1,8 +1,9 @@
 #pragma once
-#include "iostream"
+#include <iostream>
+#include <cstdlib>
 #include "SFML/Graphics.hpp"
 #include "SFML/Window.hpp"
-#include <cstdlib>
+#include "imgui-SFML.h"
 
 namespace Velium::Graphics {
 
@@ -18,7 +19,7 @@ namespace Velium::Graphics {
             WINDOW_POSITION_BOTTOM_RIGHT,
         };
     private:
-        //m_vars
+        sf::Clock m_delta_clock;
     public:
         Window(const char* title, int height, int width, WINDOW_POSITION win_pos = WINDOW_POSITION_CENTER);
         ~Window();
