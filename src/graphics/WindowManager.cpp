@@ -13,8 +13,14 @@ namespace Velium::Graphics
         }
     }
 
-    void WindowManager::addWindow(Window* window)
+    int WindowManager::addWindow(Window* window)
     {
         WindowManager::m_windows->push_back(window);
+        return m_windows->size() - 1;
+    }
+
+    void WindowManager::removeWindow(int pos)
+    {
+        WindowManager::m_windows->erase(m_windows->begin() + pos);
     }
 }

@@ -20,6 +20,7 @@ namespace Velium::Graphics {
         };
     private:
         sf::Clock m_delta_clock;
+        int m_window_id;
     public:
         Window(const char* title, int height, int width, WINDOW_POSITION win_pos = WINDOW_POSITION_CENTER);
         ~Window();

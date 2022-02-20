@@ -13,7 +13,7 @@ add_executable(Velium src/main.cpp
         lib/imgui/imgui_tables.cpp
         lib/imgui/imgui_widgets.cpp
         lib/imgui/imgui-SFML.cpp
-        )
+        src/graphics/DebugGUIStyle.cpp)
 
 target_include_directories(Velium PUBLIC lib/imgui/)
 

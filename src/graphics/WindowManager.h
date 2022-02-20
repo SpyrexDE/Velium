@@ -9,7 +9,8 @@ namespace Velium::Graphics {
         inline static std::vector<Window*> m_windows[10];
     public:
         static void init();
-        static void addWindow(Window* window);
+        static int addWindow(Window* window);
+        static void removeWindow(int pos);
     private:
 
     };

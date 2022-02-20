@@ -1,7 +1,6 @@
 #include "graphics/Window.h"
 #include "iostream"
 #include "graphics/WindowManager.h"
-#include "imgui.h"
 
 int main()
 {
@@ -9,7 +8,8 @@ int main()
     using namespace Graphics;
 
     Window window("Velium", 500, 500);
-    WindowManager::addWindow(&window);
+    Window window2("Velium", 500, 500);
+    Window window3("Velium", 500, 500);
 
     WindowManager::init();
 
