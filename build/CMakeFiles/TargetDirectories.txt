@@ -1,0 +1,3 @@
+/home/spyrex/Documents/dev/cpp/Velium/build/CMakeFiles/Velium.dir
+/home/spyrex/Documents/dev/cpp/Velium/build/CMakeFiles/edit_cache.dir
+/home/spyrex/Documents/dev/cpp/Velium/build/CMakeFiles/rebuild_cache.dir

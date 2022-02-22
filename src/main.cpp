@@ -7,9 +7,7 @@ int main()
     using namespace Velium;
     using namespace Graphics;
 
-    Window window("Velium", 500, 500);
-    Window window2("Velium", 500, 500);
-    Window window3("Velium", 500, 500);
+    Window window("Velium", 800, 1200);
 
     WindowManager::init();
 

@@ -61,7 +61,7 @@ namespace Velium::Graphics {
         ImGui::SFML::Update(*this, m_delta_clock.restart());
 
         sf::Font font;
-        if (!font.loadFromFile("../src/res/fonts/consolas/consolas.ttf"))
+        if (!font.loadFromFile("src/res/fonts/consolas/consolas.ttf"))
             std::cout << "Error loading font file";
         text = sf::Text("Hello SFML", font, 50);
         text.setPosition(100, 100);

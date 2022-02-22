@@ -1,0 +1,47 @@
+[
+{
+  "directory": "/home/spyrex/Documents/dev/cpp/Velium/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui -g -std=gnu++23 -o CMakeFiles/Velium.dir/src/main.cpp.o -c /home/spyrex/Documents/dev/cpp/Velium/src/main.cpp",
+  "file": "/home/spyrex/Documents/dev/cpp/Velium/src/main.cpp"
+},
+{
+  "directory": "/home/spyrex/Documents/dev/cpp/Velium/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui -g -std=gnu++23 -o CMakeFiles/Velium.dir/src/graphics/Window.cpp.o -c /home/spyrex/Documents/dev/cpp/Velium/src/graphics/Window.cpp",
+  "file": "/home/spyrex/Documents/dev/cpp/Velium/src/graphics/Window.cpp"
+},
+{
+  "directory": "/home/spyrex/Documents/dev/cpp/Velium/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui -g -std=gnu++23 -o CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.o -c /home/spyrex/Documents/dev/cpp/Velium/src/graphics/WindowManager.cpp",
+  "file": "/home/spyrex/Documents/dev/cpp/Velium/src/graphics/WindowManager.cpp"
+},
+{
+  "directory": "/home/spyrex/Documents/dev/cpp/Velium/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui -g -std=gnu++23 -o CMakeFiles/Velium.dir/lib/imgui/imgui.cpp.o -c /home/spyrex/Documents/dev/cpp/Velium/lib/imgui/imgui.cpp",
+  "file": "/home/spyrex/Documents/dev/cpp/Velium/lib/imgui/imgui.cpp"
+},
+{
+  "directory": "/home/spyrex/Documents/dev/cpp/Velium/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui -g -std=gnu++23 -o CMakeFiles/Velium.dir/lib/imgui/imgui_draw.cpp.o -c /home/spyrex/Documents/dev/cpp/Velium/lib/imgui/imgui_draw.cpp",
+  "file": "/home/spyrex/Documents/dev/cpp/Velium/lib/imgui/imgui_draw.cpp"
+},
+{
+  "directory": "/home/spyrex/Documents/dev/cpp/Velium/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui -g -std=gnu++23 -o CMakeFiles/Velium.dir/lib/imgui/imgui_tables.cpp.o -c /home/spyrex/Documents/dev/cpp/Velium/lib/imgui/imgui_tables.cpp",
+  "file": "/home/spyrex/Documents/dev/cpp/Velium/lib/imgui/imgui_tables.cpp"
+},
+{
+  "directory": "/home/spyrex/Documents/dev/cpp/Velium/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui -g -std=gnu++23 -o CMakeFiles/Velium.dir/lib/imgui/imgui_widgets.cpp.o -c /home/spyrex/Documents/dev/cpp/Velium/lib/imgui/imgui_widgets.cpp",
+  "file": "/home/spyrex/Documents/dev/cpp/Velium/lib/imgui/imgui_widgets.cpp"
+},
+{
+  "directory": "/home/spyrex/Documents/dev/cpp/Velium/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui -g -std=gnu++23 -o CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.o -c /home/spyrex/Documents/dev/cpp/Velium/lib/imgui/imgui-SFML.cpp",
+  "file": "/home/spyrex/Documents/dev/cpp/Velium/lib/imgui/imgui-SFML.cpp"
+},
+{
+  "directory": "/home/spyrex/Documents/dev/cpp/Velium/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui -g -std=gnu++23 -o CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o -c /home/spyrex/Documents/dev/cpp/Velium/src/graphics/DebugGUIStyle.cpp",
+  "file": "/home/spyrex/Documents/dev/cpp/Velium/src/graphics/DebugGUIStyle.cpp"
+}
+]

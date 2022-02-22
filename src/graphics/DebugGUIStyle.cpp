@@ -68,10 +68,10 @@ namespace Velium::Graphics
 
         ImGuiIO &io = ImGui::GetIO();
 
-        io.Fonts->AddFontFromFileTTF("../src/res/fonts/ruda/Ruda-Regular.ttf", 20);
-        io.Fonts->AddFontFromFileTTF("../src/res/fonts/ruda/Ruda-Medium.ttf", 20);
-        io.Fonts->AddFontFromFileTTF("../src/res/fonts/ruda/Ruda-SemiBold.ttf", 20);
-        io.Fonts->AddFontFromFileTTF("../src/res/fonts/ruda/Ruda-Bold.ttf", 20);
+        io.Fonts->AddFontFromFileTTF("src/res/fonts/ruda/Ruda-Regular.ttf", 20);
+        io.Fonts->AddFontFromFileTTF("src/res/fonts/ruda/Ruda-Medium.ttf", 20);
+        io.Fonts->AddFontFromFileTTF("src/res/fonts/ruda/Ruda-SemiBold.ttf", 20);
+        io.Fonts->AddFontFromFileTTF("src/res/fonts/ruda/Ruda-Bold.ttf", 20);
 
         io.Fonts->Build();
         if (!ImGui::SFML::UpdateFontTexture())
