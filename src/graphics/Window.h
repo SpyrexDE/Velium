@@ -4,6 +4,8 @@
 #include "SFML/Graphics.hpp"
 #include "SFML/Window.hpp"
 #include "imgui-SFML.h"
+#include <list>
+
 
 namespace Velium::Graphics {
 
@@ -18,19 +20,27 @@ namespace Velium::Graphics {
             WINDOW_POSITION_BOTTOM_LEFT,
             WINDOW_POSITION_BOTTOM_RIGHT,
         };
+
+        sf::Vector2<float> getRelativeMousePos();
+
     private:
         sf::Clock m_delta_clock;
-        int m_window_id;
+        std::vector<std::unique_ptr<sf::Drawable>> drawList{};
+
     public:
         Window(const char* title, int height, int width, WINDOW_POSITION win_pos = WINDOW_POSITION_CENTER);
         ~Window();
         void update();
         void clear();
 
-        sf::Text text;
+        void addToDrawList(sf::Drawable* item);
+        void removeFromDrawList(sf::Drawable* item);
+
+
 
     private:
-        void handleClose(sf::Event &event);
+        void handleClose(sf::Event& event);
         void handleResize(sf::Event event);
+
     };
 }

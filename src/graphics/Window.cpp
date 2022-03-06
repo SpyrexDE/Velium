@@ -8,12 +8,11 @@ namespace Velium::Graphics {
     Window::Window(const char *title, int height, int width, WINDOW_POSITION win_pos) :
         sf::RenderWindow(sf::VideoMode(width, height), title)
     {
-        // Add to WindowManager
-        m_window_id = WindowManager::addWindow(this);
-
         // Setup ImGUI
         if(!ImGui::SFML::Init(*this, false))
             std::cout << "Error while initializing ImGui!";
+
+        this->setActive(false);
 
         Velium::Graphics::applyDebugGuiStyle();
 
@@ -33,11 +32,13 @@ namespace Velium::Graphics {
         setPosition((sf::Vector2<int>)pos - (sf::Vector2<int>)sf::RenderWindow::getSize() / 2);
 
 
+        // Add to WindowManager
+        WindowManager::addWindow(this);
     }
 
     Window::~Window()
     {
-        WindowManager::removeWindow(m_window_id);
+        WindowManager::removeWindow(this);
     }
 
     void Window::clear()
@@ -60,23 +61,22 @@ namespace Velium::Graphics {
 
         ImGui::SFML::Update(*this, m_delta_clock.restart());
 
-        sf::Font font;
-        if (!font.loadFromFile("src/res/fonts/consolas/consolas.ttf"))
-            std::cout << "Error loading font file";
-        text = sf::Text("Hello SFML", font, 50);
-        text.setPosition(100, 100);
-        sf::RenderWindow::draw(text);
+
+        // Render drawables
+
+        for(auto& item: drawList)
+        {
+            this->draw(*item);
+        }
 
 
-        sf::RectangleShape pixel;
-        pixel.setSize({ 1.f, 1.f });
-        pixel.setFillColor({ 255, 255, 255 });
-        pixel.setPosition(sf::RenderWindow::mapPixelToCoords(sf::Mouse::getPosition(*this)));
-        sf::RenderWindow::draw(pixel);
-
+        ImGui::SFML::SetCurrentWindow(*this);
         ImGui::Begin("Hello, world!");
-        ImGui::Button("Look at this pretty button");
+        if(ImGui::Button("Test")) {
+            std::cout << "wow" <<std::endl;
+        }
         ImGui::End();
+
 
         ImGui::SFML::Render(*this);
         sf::RenderWindow::display();
@@ -95,5 +95,21 @@ namespace Velium::Graphics {
             sf::FloatRect visibleArea(0, 0, event.size.width, event.size.height);
             this->setView(sf::View(visibleArea));
         }
+    }
+
+    void Window::addToDrawList(sf::Drawable* item)
+    {
+        std::unique_ptr<sf::Drawable> uniqueEntityPtr{item};
+        drawList.emplace_back(move(uniqueEntityPtr));
+    }
+
+    void Window::removeFromDrawList(sf::Drawable* item)
+    {
+        // TODO: IMPLEMENT
+    }
+
+    sf::Vector2<float> Window::getRelativeMousePos()
+    {
+        return this->mapPixelToCoords(sf::Mouse::getPosition(*this));
     }
 }

@@ -1,4 +1,19 @@
 /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/ninja/linux/ninja -G Ninja /home/spyrex/Documents/dev/cpp/Velium
--- Configuring done
--- Generating done
--- Build files have been written to: /home/spyrex/Documents/dev/cpp/Velium/cmake-build-debug
+CMake Error at CMakeLists.txt:20 (add_subdirectory):
+  The source directory
+
+    /home/spyrex/Documents/dev/cpp/Velium/src
+
+  does not contain a CMakeLists.txt file.
+
+
+CMake Error at CMakeLists.txt:21 (add_subdirectory):
+  The source directory
+
+    /home/spyrex/Documents/dev/cpp/Velium/game
+
+  does not contain a CMakeLists.txt file.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/spyrex/Documents/dev/cpp/Velium/cmake-build-debug/CMakeFiles/CMakeOutput.log".

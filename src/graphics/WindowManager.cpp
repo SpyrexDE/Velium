@@ -4,23 +4,30 @@ namespace Velium::Graphics
 {
     void WindowManager::init()
     {
-        while(!m_windows->empty())
+        WindowManager::running = true;
+        while(!m_windows.empty())
         {
-            for(int i = 0; i < m_windows->size(); i++)
+            for(Window* window : m_windows)
             {
-                (*m_windows->at(i)).update();
+                window->update();
             }
         }
+        WindowManager::running = false;
+        ImGui::SFML::Shutdown();
     }
 
-    int WindowManager::addWindow(Window* window)
+    void WindowManager::addWindow(Window* window)
     {
-        WindowManager::m_windows->push_back(window);
-        return m_windows->size() - 1;
+        WindowManager::m_windows.push_back(window);
+
+        // Start updateloop
+        if(!WindowManager::running)
+            thread =  std::thread(WindowManager::init);
+
     }
 
-    void WindowManager::removeWindow(int pos)
+    void WindowManager::removeWindow(Window* window)
     {
-        WindowManager::m_windows->erase(m_windows->begin() + pos);
+        WindowManager::m_windows.remove(window);
     }
 }

@@ -268,7 +268,7 @@ CODE
         MyGameRender(); // may use any Dear ImGui functions as well!
 
         // Render dear imgui, swap buffers
-        // (You want to try calling EndFrame/Render as late as you can, to be able to use Dear ImGui in your own game rendering code)
+        // (You want to try calling EndFrame/Render as late as you can, to be able to use Dear ImGui in your own Game rendering code)
         ImGui::EndFrame();
         ImGui::Render();
         ImDrawData* draw_data = ImGui::GetDrawData();
@@ -344,7 +344,7 @@ CODE
  - The gamepad/keyboard navigation is fairly functional and keeps being improved.
  - Gamepad support is particularly useful to use Dear ImGui on a console system (e.g. PS4, Switch, XB1) without a mouse!
  - You can ask questions and report issues at https://github.com/ocornut/imgui/issues/787
- - The initial focus was to support game controllers, but keyboard is becoming increasingly and decently usable.
+ - The initial focus was to support Game controllers, but keyboard is becoming increasingly and decently usable.
  - Keyboard:
     - Application: Set io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard to enable.
     - Internally: NewFrame() will automatically fill io.NavInputs[] based on backend's io.AddKeyEvent() calls.
@@ -353,7 +353,7 @@ CODE
        - io.NavActive: true when a window is focused and it doesn't have the ImGuiWindowFlags_NoNavInputs flag set.
        - io.NavVisible: true when the navigation cursor is visible (and usually goes false when mouse is used).
        - or query focus information with e.g. IsWindowFocused(ImGuiFocusedFlags_AnyWindow), IsItemFocused() etc. functions.
-      Please reach out if you think the game vs navigation input sharing could be improved.
+      Please reach out if you think the Game vs navigation input sharing could be improved.
  - Gamepad:
     - Application: Set io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad to enable.
     - Backend: Set io.BackendFlags |= ImGuiBackendFlags_HasGamepad + call io.AddKeyEvent/AddKeyAnalogEvent() with ImGuiKey_Gamepad_XXX keys.
@@ -362,8 +362,8 @@ CODE
     - Internally: NewFrame() will automatically fill io.NavInputs[] based on backend's io.AddKeyEvent() + io.AddKeyAnalogEvent() calls.
     - BEFORE 1.87, BACKENDS USED TO WRITE DIRECTLY TO io.NavInputs[]. This is going to be obsoleted in the future. Please call io functions instead!
     - You can download PNG/PSD files depicting the gamepad controls for common controllers at: http://dearimgui.org/controls_sheets
-    - If you need to share inputs between your game and the Dear ImGui interface, the easiest approach is to go all-or-nothing,
-      with a buttons combo to toggle the target. Please reach out if you think the game vs navigation input sharing could be improved.
+    - If you need to share inputs between your Game and the Dear ImGui interface, the easiest approach is to go all-or-nothing,
+      with a buttons combo to toggle the target. Please reach out if you think the Game vs navigation input sharing could be improved.
  - Mouse:
     - PS4/PS5 users: Consider emulating a mouse cursor with DualShock4 touch pad or a spare analog stick as a mouse-emulation fallback.
     - Consoles/Tablet/Phone users: Consider using a Synergy 1.x server (on your PC) + uSynergy.c (on your console/tablet/phone app) to share your PC mouse/keyboard.
