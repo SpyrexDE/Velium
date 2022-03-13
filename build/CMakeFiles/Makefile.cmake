@@ -25,6 +25,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/spyrex/.local/lib/python3.9/site-packages/cmake/data/share/cmake-3.22/Modules/Platform/Linux.cmake"
   "/home/spyrex/.local/lib/python3.9/site-packages/cmake/data/share/cmake-3.22/Modules/Platform/UnixPaths.cmake"
   "../CMakeLists.txt"
+  "../Game/CMakeLists.txt"
+  "../Velium/CMakeLists.txt"
   "CMakeFiles/3.22.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.2/CMakeSystem.cmake"
@@ -39,9 +41,12 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Velium/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Game/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Velium.dir/DependInfo.cmake"
+  "Velium/CMakeFiles/Velium.dir/DependInfo.cmake"
+  "Game/CMakeFiles/Game.dir/DependInfo.cmake"
   )

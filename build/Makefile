@@ -57,10 +57,10 @@ RM = /home/spyrex/.local/lib/python3.9/site-packages/cmake/data/bin/cmake -E rm 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/spyrex/Documents/dev/cpp/Velium
+CMAKE_SOURCE_DIR = /home/spyrex/Documents/dev/cpp/VelDev
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/spyrex/Documents/dev/cpp/Velium/build
+CMAKE_BINARY_DIR = /home/spyrex/Documents/dev/cpp/VelDev/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/spyrex/Documents/dev/cpp/Velium/build/CMakeFiles /home/spyrex/Documents/dev/cpp/Velium/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles /home/spyrex/Documents/dev/cpp/VelDev/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/spyrex/Documents/dev/cpp/Velium/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -126,224 +126,21 @@ Velium: cmake_check_build_system
 
 # fast build rule for target.
 Velium/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/build
+	$(MAKE) $(MAKESILENT) -f Velium/CMakeFiles/Velium.dir/build.make Velium/CMakeFiles/Velium.dir/build
 .PHONY : Velium/fast
 
-lib/imgui/imgui-SFML.o: lib/imgui/imgui-SFML.cpp.o
-.PHONY : lib/imgui/imgui-SFML.o
+#=============================================================================
+# Target rules for targets named Game
 
-# target to build an object file
-lib/imgui/imgui-SFML.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.o
-.PHONY : lib/imgui/imgui-SFML.cpp.o
+# Build rule for target.
+Game: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Game
+.PHONY : Game
 
-lib/imgui/imgui-SFML.i: lib/imgui/imgui-SFML.cpp.i
-.PHONY : lib/imgui/imgui-SFML.i
-
-# target to preprocess a source file
-lib/imgui/imgui-SFML.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.i
-.PHONY : lib/imgui/imgui-SFML.cpp.i
-
-lib/imgui/imgui-SFML.s: lib/imgui/imgui-SFML.cpp.s
-.PHONY : lib/imgui/imgui-SFML.s
-
-# target to generate assembly for a file
-lib/imgui/imgui-SFML.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.s
-.PHONY : lib/imgui/imgui-SFML.cpp.s
-
-lib/imgui/imgui.o: lib/imgui/imgui.cpp.o
-.PHONY : lib/imgui/imgui.o
-
-# target to build an object file
-lib/imgui/imgui.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/lib/imgui/imgui.cpp.o
-.PHONY : lib/imgui/imgui.cpp.o
-
-lib/imgui/imgui.i: lib/imgui/imgui.cpp.i
-.PHONY : lib/imgui/imgui.i
-
-# target to preprocess a source file
-lib/imgui/imgui.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/lib/imgui/imgui.cpp.i
-.PHONY : lib/imgui/imgui.cpp.i
-
-lib/imgui/imgui.s: lib/imgui/imgui.cpp.s
-.PHONY : lib/imgui/imgui.s
-
-# target to generate assembly for a file
-lib/imgui/imgui.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/lib/imgui/imgui.cpp.s
-.PHONY : lib/imgui/imgui.cpp.s
-
-lib/imgui/imgui_draw.o: lib/imgui/imgui_draw.cpp.o
-.PHONY : lib/imgui/imgui_draw.o
-
-# target to build an object file
-lib/imgui/imgui_draw.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/lib/imgui/imgui_draw.cpp.o
-.PHONY : lib/imgui/imgui_draw.cpp.o
-
-lib/imgui/imgui_draw.i: lib/imgui/imgui_draw.cpp.i
-.PHONY : lib/imgui/imgui_draw.i
-
-# target to preprocess a source file
-lib/imgui/imgui_draw.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/lib/imgui/imgui_draw.cpp.i
-.PHONY : lib/imgui/imgui_draw.cpp.i
-
-lib/imgui/imgui_draw.s: lib/imgui/imgui_draw.cpp.s
-.PHONY : lib/imgui/imgui_draw.s
-
-# target to generate assembly for a file
-lib/imgui/imgui_draw.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/lib/imgui/imgui_draw.cpp.s
-.PHONY : lib/imgui/imgui_draw.cpp.s
-
-lib/imgui/imgui_tables.o: lib/imgui/imgui_tables.cpp.o
-.PHONY : lib/imgui/imgui_tables.o
-
-# target to build an object file
-lib/imgui/imgui_tables.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/lib/imgui/imgui_tables.cpp.o
-.PHONY : lib/imgui/imgui_tables.cpp.o
-
-lib/imgui/imgui_tables.i: lib/imgui/imgui_tables.cpp.i
-.PHONY : lib/imgui/imgui_tables.i
-
-# target to preprocess a source file
-lib/imgui/imgui_tables.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/lib/imgui/imgui_tables.cpp.i
-.PHONY : lib/imgui/imgui_tables.cpp.i
-
-lib/imgui/imgui_tables.s: lib/imgui/imgui_tables.cpp.s
-.PHONY : lib/imgui/imgui_tables.s
-
-# target to generate assembly for a file
-lib/imgui/imgui_tables.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/lib/imgui/imgui_tables.cpp.s
-.PHONY : lib/imgui/imgui_tables.cpp.s
-
-lib/imgui/imgui_widgets.o: lib/imgui/imgui_widgets.cpp.o
-.PHONY : lib/imgui/imgui_widgets.o
-
-# target to build an object file
-lib/imgui/imgui_widgets.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/lib/imgui/imgui_widgets.cpp.o
-.PHONY : lib/imgui/imgui_widgets.cpp.o
-
-lib/imgui/imgui_widgets.i: lib/imgui/imgui_widgets.cpp.i
-.PHONY : lib/imgui/imgui_widgets.i
-
-# target to preprocess a source file
-lib/imgui/imgui_widgets.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/lib/imgui/imgui_widgets.cpp.i
-.PHONY : lib/imgui/imgui_widgets.cpp.i
-
-lib/imgui/imgui_widgets.s: lib/imgui/imgui_widgets.cpp.s
-.PHONY : lib/imgui/imgui_widgets.s
-
-# target to generate assembly for a file
-lib/imgui/imgui_widgets.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/lib/imgui/imgui_widgets.cpp.s
-.PHONY : lib/imgui/imgui_widgets.cpp.s
-
-src/graphics/DebugGUIStyle.o: src/graphics/DebugGUIStyle.cpp.o
-.PHONY : src/graphics/DebugGUIStyle.o
-
-# target to build an object file
-src/graphics/DebugGUIStyle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o
-.PHONY : src/graphics/DebugGUIStyle.cpp.o
-
-src/graphics/DebugGUIStyle.i: src/graphics/DebugGUIStyle.cpp.i
-.PHONY : src/graphics/DebugGUIStyle.i
-
-# target to preprocess a source file
-src/graphics/DebugGUIStyle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.i
-.PHONY : src/graphics/DebugGUIStyle.cpp.i
-
-src/graphics/DebugGUIStyle.s: src/graphics/DebugGUIStyle.cpp.s
-.PHONY : src/graphics/DebugGUIStyle.s
-
-# target to generate assembly for a file
-src/graphics/DebugGUIStyle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.s
-.PHONY : src/graphics/DebugGUIStyle.cpp.s
-
-src/graphics/Window.o: src/graphics/Window.cpp.o
-.PHONY : src/graphics/Window.o
-
-# target to build an object file
-src/graphics/Window.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/src/graphics/Window.cpp.o
-.PHONY : src/graphics/Window.cpp.o
-
-src/graphics/Window.i: src/graphics/Window.cpp.i
-.PHONY : src/graphics/Window.i
-
-# target to preprocess a source file
-src/graphics/Window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/src/graphics/Window.cpp.i
-.PHONY : src/graphics/Window.cpp.i
-
-src/graphics/Window.s: src/graphics/Window.cpp.s
-.PHONY : src/graphics/Window.s
-
-# target to generate assembly for a file
-src/graphics/Window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/src/graphics/Window.cpp.s
-.PHONY : src/graphics/Window.cpp.s
-
-src/graphics/WindowManager.o: src/graphics/WindowManager.cpp.o
-.PHONY : src/graphics/WindowManager.o
-
-# target to build an object file
-src/graphics/WindowManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.o
-.PHONY : src/graphics/WindowManager.cpp.o
-
-src/graphics/WindowManager.i: src/graphics/WindowManager.cpp.i
-.PHONY : src/graphics/WindowManager.i
-
-# target to preprocess a source file
-src/graphics/WindowManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.i
-.PHONY : src/graphics/WindowManager.cpp.i
-
-src/graphics/WindowManager.s: src/graphics/WindowManager.cpp.s
-.PHONY : src/graphics/WindowManager.s
-
-# target to generate assembly for a file
-src/graphics/WindowManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.s
-.PHONY : src/graphics/WindowManager.cpp.s
-
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
-
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+# fast build rule for target.
+Game/fast:
+	$(MAKE) $(MAKESILENT) -f Game/CMakeFiles/Game.dir/build.make Game/CMakeFiles/Game.dir/build
+.PHONY : Game/fast
 
 # Help Target
 help:
@@ -353,34 +150,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Game"
 	@echo "... Velium"
-	@echo "... lib/imgui/imgui-SFML.o"
-	@echo "... lib/imgui/imgui-SFML.i"
-	@echo "... lib/imgui/imgui-SFML.s"
-	@echo "... lib/imgui/imgui.o"
-	@echo "... lib/imgui/imgui.i"
-	@echo "... lib/imgui/imgui.s"
-	@echo "... lib/imgui/imgui_draw.o"
-	@echo "... lib/imgui/imgui_draw.i"
-	@echo "... lib/imgui/imgui_draw.s"
-	@echo "... lib/imgui/imgui_tables.o"
-	@echo "... lib/imgui/imgui_tables.i"
-	@echo "... lib/imgui/imgui_tables.s"
-	@echo "... lib/imgui/imgui_widgets.o"
-	@echo "... lib/imgui/imgui_widgets.i"
-	@echo "... lib/imgui/imgui_widgets.s"
-	@echo "... src/graphics/DebugGUIStyle.o"
-	@echo "... src/graphics/DebugGUIStyle.i"
-	@echo "... src/graphics/DebugGUIStyle.s"
-	@echo "... src/graphics/Window.o"
-	@echo "... src/graphics/Window.i"
-	@echo "... src/graphics/Window.s"
-	@echo "... src/graphics/WindowManager.o"
-	@echo "... src/graphics/WindowManager.i"
-	@echo "... src/graphics/WindowManager.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
 .PHONY : help
 
 

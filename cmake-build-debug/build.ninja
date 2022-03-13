@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: Velium
+# Project: VelDev
 # Configurations: Debug
 # =============================================================================
 
@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/spyrex/Documents/dev/cpp/Velium/cmake-build-debug/
+cmake_ninja_workdir = /home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug/
 
 #############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/spyrex/Documents/dev/cpp/Velium/cmake-build-debug && /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/spyrex/Documents/dev/cpp/Velium -B/home/spyrex/Documents/dev/cpp/Velium/cmake-build-debug
+  COMMAND = cd /home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug && /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/spyrex/Documents/dev/cpp/VelDev -B/home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -57,103 +57,197 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/spyrex/Documents/dev/cpp/Velium/cmake-build-debug && /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug && /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
 
 # =============================================================================
-# Object build statements for EXECUTABLE target Velium
+# Write statements declared in CMakeLists.txt:
+# /home/spyrex/Documents/dev/cpp/VelDev/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Velium/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug/Velium && /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/spyrex/Documents/dev/cpp/VelDev -B/home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Velium/rebuild_cache: phony Velium/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build Velium/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug/Velium && /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Velium/edit_cache: phony Velium/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target Velium
 
 
 #############################################
 # Order-only phony target for Velium
 
-build cmake_object_order_depends_target_Velium: phony || CMakeFiles/Velium.dir
+build cmake_object_order_depends_target_Velium: phony || Velium/CMakeFiles/Velium.dir
 
-build CMakeFiles/Velium.dir/src/graphics/Window.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/Velium/src/graphics/Window.cpp || cmake_object_order_depends_target_Velium
-  DEP_FILE = CMakeFiles/Velium.dir/src/graphics/Window.cpp.o.d
+build Velium/CMakeFiles/Velium.dir/src/graphics/Window.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/Window.cpp || cmake_object_order_depends_target_Velium
+  DEP_FILE = Velium/CMakeFiles/Velium.dir/src/graphics/Window.cpp.o.d
   FLAGS = -g -std=gnu++23
-  INCLUDES = -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui
-  OBJECT_DIR = CMakeFiles/Velium.dir
-  OBJECT_FILE_DIR = CMakeFiles/Velium.dir/src/graphics
+  INCLUDES = -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui
+  OBJECT_DIR = Velium/CMakeFiles/Velium.dir
+  OBJECT_FILE_DIR = Velium/CMakeFiles/Velium.dir/src/graphics
 
-build CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/Velium/src/graphics/WindowManager.cpp || cmake_object_order_depends_target_Velium
-  DEP_FILE = CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.o.d
+build Velium/CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/WindowManager.cpp || cmake_object_order_depends_target_Velium
+  DEP_FILE = Velium/CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.o.d
   FLAGS = -g -std=gnu++23
-  INCLUDES = -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui
-  OBJECT_DIR = CMakeFiles/Velium.dir
-  OBJECT_FILE_DIR = CMakeFiles/Velium.dir/src/graphics
+  INCLUDES = -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui
+  OBJECT_DIR = Velium/CMakeFiles/Velium.dir
+  OBJECT_FILE_DIR = Velium/CMakeFiles/Velium.dir/src/graphics
 
-build CMakeFiles/Velium.dir/lib/imgui/imgui.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/Velium/lib/imgui/imgui.cpp || cmake_object_order_depends_target_Velium
-  DEP_FILE = CMakeFiles/Velium.dir/lib/imgui/imgui.cpp.o.d
+build Velium/CMakeFiles/Velium.dir/lib/imgui/imgui.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui/imgui.cpp || cmake_object_order_depends_target_Velium
+  DEP_FILE = Velium/CMakeFiles/Velium.dir/lib/imgui/imgui.cpp.o.d
   FLAGS = -g -std=gnu++23
-  INCLUDES = -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui
-  OBJECT_DIR = CMakeFiles/Velium.dir
-  OBJECT_FILE_DIR = CMakeFiles/Velium.dir/lib/imgui
+  INCLUDES = -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui
+  OBJECT_DIR = Velium/CMakeFiles/Velium.dir
+  OBJECT_FILE_DIR = Velium/CMakeFiles/Velium.dir/lib/imgui
 
-build CMakeFiles/Velium.dir/lib/imgui/imgui_draw.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/Velium/lib/imgui/imgui_draw.cpp || cmake_object_order_depends_target_Velium
-  DEP_FILE = CMakeFiles/Velium.dir/lib/imgui/imgui_draw.cpp.o.d
+build Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_draw.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui/imgui_draw.cpp || cmake_object_order_depends_target_Velium
+  DEP_FILE = Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_draw.cpp.o.d
   FLAGS = -g -std=gnu++23
-  INCLUDES = -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui
-  OBJECT_DIR = CMakeFiles/Velium.dir
-  OBJECT_FILE_DIR = CMakeFiles/Velium.dir/lib/imgui
+  INCLUDES = -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui
+  OBJECT_DIR = Velium/CMakeFiles/Velium.dir
+  OBJECT_FILE_DIR = Velium/CMakeFiles/Velium.dir/lib/imgui
 
-build CMakeFiles/Velium.dir/lib/imgui/imgui_tables.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/Velium/lib/imgui/imgui_tables.cpp || cmake_object_order_depends_target_Velium
-  DEP_FILE = CMakeFiles/Velium.dir/lib/imgui/imgui_tables.cpp.o.d
+build Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_tables.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui/imgui_tables.cpp || cmake_object_order_depends_target_Velium
+  DEP_FILE = Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_tables.cpp.o.d
   FLAGS = -g -std=gnu++23
-  INCLUDES = -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui
-  OBJECT_DIR = CMakeFiles/Velium.dir
-  OBJECT_FILE_DIR = CMakeFiles/Velium.dir/lib/imgui
+  INCLUDES = -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui
+  OBJECT_DIR = Velium/CMakeFiles/Velium.dir
+  OBJECT_FILE_DIR = Velium/CMakeFiles/Velium.dir/lib/imgui
 
-build CMakeFiles/Velium.dir/lib/imgui/imgui_widgets.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/Velium/lib/imgui/imgui_widgets.cpp || cmake_object_order_depends_target_Velium
-  DEP_FILE = CMakeFiles/Velium.dir/lib/imgui/imgui_widgets.cpp.o.d
+build Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_widgets.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui/imgui_widgets.cpp || cmake_object_order_depends_target_Velium
+  DEP_FILE = Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_widgets.cpp.o.d
   FLAGS = -g -std=gnu++23
-  INCLUDES = -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui
-  OBJECT_DIR = CMakeFiles/Velium.dir
-  OBJECT_FILE_DIR = CMakeFiles/Velium.dir/lib/imgui
+  INCLUDES = -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui
+  OBJECT_DIR = Velium/CMakeFiles/Velium.dir
+  OBJECT_FILE_DIR = Velium/CMakeFiles/Velium.dir/lib/imgui
 
-build CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/Velium/lib/imgui/imgui-SFML.cpp || cmake_object_order_depends_target_Velium
-  DEP_FILE = CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.o.d
+build Velium/CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui/imgui-SFML.cpp || cmake_object_order_depends_target_Velium
+  DEP_FILE = Velium/CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.o.d
   FLAGS = -g -std=gnu++23
-  INCLUDES = -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui
-  OBJECT_DIR = CMakeFiles/Velium.dir
-  OBJECT_FILE_DIR = CMakeFiles/Velium.dir/lib/imgui
+  INCLUDES = -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui
+  OBJECT_DIR = Velium/CMakeFiles/Velium.dir
+  OBJECT_FILE_DIR = Velium/CMakeFiles/Velium.dir/lib/imgui
 
-build CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/Velium/src/graphics/DebugGUIStyle.cpp || cmake_object_order_depends_target_Velium
-  DEP_FILE = CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o.d
+build Velium/CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/DebugGUIStyle.cpp || cmake_object_order_depends_target_Velium
+  DEP_FILE = Velium/CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o.d
   FLAGS = -g -std=gnu++23
-  INCLUDES = -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui
-  OBJECT_DIR = CMakeFiles/Velium.dir
-  OBJECT_FILE_DIR = CMakeFiles/Velium.dir/src/graphics
+  INCLUDES = -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui
+  OBJECT_DIR = Velium/CMakeFiles/Velium.dir
+  OBJECT_FILE_DIR = Velium/CMakeFiles/Velium.dir/src/graphics
 
-build CMakeFiles/Velium.dir/game/main.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/Velium/game/main.cpp || cmake_object_order_depends_target_Velium
-  DEP_FILE = CMakeFiles/Velium.dir/game/main.cpp.o.d
+build Velium/CMakeFiles/Velium.dir/src/resources/ResHandler.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/VelDev/Velium/src/resources/ResHandler.cpp || cmake_object_order_depends_target_Velium
+  DEP_FILE = Velium/CMakeFiles/Velium.dir/src/resources/ResHandler.cpp.o.d
   FLAGS = -g -std=gnu++23
-  INCLUDES = -I/home/spyrex/Documents/dev/cpp/Velium/lib/imgui
-  OBJECT_DIR = CMakeFiles/Velium.dir
-  OBJECT_FILE_DIR = CMakeFiles/Velium.dir/game
+  INCLUDES = -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui
+  OBJECT_DIR = Velium/CMakeFiles/Velium.dir
+  OBJECT_FILE_DIR = Velium/CMakeFiles/Velium.dir/src/resources
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Velium
+# Link build statements for STATIC_LIBRARY target Velium
 
 
 #############################################
-# Link the executable Velium
+# Link the static library lib/libVelium.a
 
-build Velium: CXX_EXECUTABLE_LINKER__Velium_Debug CMakeFiles/Velium.dir/src/graphics/Window.cpp.o CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.o CMakeFiles/Velium.dir/lib/imgui/imgui.cpp.o CMakeFiles/Velium.dir/lib/imgui/imgui_draw.cpp.o CMakeFiles/Velium.dir/lib/imgui/imgui_tables.cpp.o CMakeFiles/Velium.dir/lib/imgui/imgui_widgets.cpp.o CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.o CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o CMakeFiles/Velium.dir/game/main.cpp.o
-  FLAGS = -g
-  LINK_LIBRARIES = -lGL  -lsfml-network  -lsfml-graphics  -lsfml-window  -lsfml-system  -lsfml-audio  -lX11
-  OBJECT_DIR = CMakeFiles/Velium.dir
+build lib/libVelium.a: CXX_STATIC_LIBRARY_LINKER__Velium_Debug Velium/CMakeFiles/Velium.dir/src/graphics/Window.cpp.o Velium/CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.o Velium/CMakeFiles/Velium.dir/lib/imgui/imgui.cpp.o Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_draw.cpp.o Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_tables.cpp.o Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_widgets.cpp.o Velium/CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.o Velium/CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o Velium/CMakeFiles/Velium.dir/src/resources/ResHandler.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = Velium/CMakeFiles/Velium.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = Velium
-  TARGET_PDB = Velium.dbg
+  TARGET_FILE = lib/libVelium.a
+  TARGET_PDB = Velium.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/spyrex/Documents/dev/cpp/VelDev/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Game/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug/Game && /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/spyrex/Documents/dev/cpp/VelDev -B/home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Game/rebuild_cache: phony Game/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build Game/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug/Game && /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Game/edit_cache: phony Game/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Game
+
+
+#############################################
+# Order-only phony target for Game
+
+build cmake_object_order_depends_target_Game: phony || cmake_object_order_depends_target_Velium
+
+build Game/CMakeFiles/Game.dir/main.cpp.o: CXX_COMPILER__Game_Debug /home/spyrex/Documents/dev/cpp/VelDev/Game/main.cpp || cmake_object_order_depends_target_Game
+  DEP_FILE = Game/CMakeFiles/Game.dir/main.cpp.o.d
+  FLAGS = -g -std=gnu++23
+  INCLUDES = -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/src -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui
+  OBJECT_DIR = Game/CMakeFiles/Game.dir
+  OBJECT_FILE_DIR = Game/CMakeFiles/Game.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Game
+
+
+#############################################
+# Link the executable bin/Game
+
+build bin/Game: CXX_EXECUTABLE_LINKER__Game_Debug Game/CMakeFiles/Game.dir/main.cpp.o | lib/libVelium.a || lib/libVelium.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libVelium.a  -lGL  -lsfml-network  -lsfml-graphics  -lsfml-window  -lsfml-system  -lsfml-audio  -lX11
+  OBJECT_DIR = Game/CMakeFiles/Game.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = bin/Game
+  TARGET_PDB = Game.dbg
 
 # =============================================================================
 # Target aliases.
+
+build Game: phony bin/Game
+
+build Velium: phony lib/libVelium.a
+
+build libVelium.a: phony lib/libVelium.a
 
 # =============================================================================
 # Folder targets.
@@ -161,9 +255,23 @@ build Velium: CXX_EXECUTABLE_LINKER__Velium_Debug CMakeFiles/Velium.dir/src/grap
 # =============================================================================
 
 #############################################
-# Folder: /home/spyrex/Documents/dev/cpp/Velium/cmake-build-debug
+# Folder: /home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug
 
-build all: phony Velium
+build all: phony Velium/all Game/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug/Game
+
+build Game/all: phony bin/Game
+
+# =============================================================================
+
+#############################################
+# Folder: /home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug/Velium
+
+build Velium/all: phony lib/libVelium.a
 
 # =============================================================================
 # Built-in targets
@@ -172,14 +280,14 @@ build all: phony Velium
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../Game/CMakeLists.txt ../Velium/CMakeLists.txt /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../Game/CMakeLists.txt ../Velium/CMakeLists.txt /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake: phony
 
 
 #############################################

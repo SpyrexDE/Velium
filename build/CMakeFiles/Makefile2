@@ -54,51 +54,110 @@ RM = /home/spyrex/.local/lib/python3.9/site-packages/cmake/data/bin/cmake -E rm 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/spyrex/Documents/dev/cpp/Velium
+CMAKE_SOURCE_DIR = /home/spyrex/Documents/dev/cpp/VelDev
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/spyrex/Documents/dev/cpp/Velium/build
+CMAKE_BINARY_DIR = /home/spyrex/Documents/dev/cpp/VelDev/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Velium.dir/all
+all: Velium/all
+all: Game/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: Velium/preinstall
+preinstall: Game/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Velium.dir/clean
+clean: Velium/clean
+clean: Game/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Velium.dir
+# Directory level rules for directory Game
+
+# Recursive "all" directory target.
+Game/all: Game/CMakeFiles/Game.dir/all
+.PHONY : Game/all
+
+# Recursive "preinstall" directory target.
+Game/preinstall:
+.PHONY : Game/preinstall
+
+# Recursive "clean" directory target.
+Game/clean: Game/CMakeFiles/Game.dir/clean
+.PHONY : Game/clean
+
+#=============================================================================
+# Directory level rules for directory Velium
+
+# Recursive "all" directory target.
+Velium/all: Velium/CMakeFiles/Velium.dir/all
+.PHONY : Velium/all
+
+# Recursive "preinstall" directory target.
+Velium/preinstall:
+.PHONY : Velium/preinstall
+
+# Recursive "clean" directory target.
+Velium/clean: Velium/CMakeFiles/Velium.dir/clean
+.PHONY : Velium/clean
+
+#=============================================================================
+# Target rules for target Velium/CMakeFiles/Velium.dir
 
 # All Build rule for target.
-CMakeFiles/Velium.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/spyrex/Documents/dev/cpp/Velium/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target Velium"
-.PHONY : CMakeFiles/Velium.dir/all
+Velium/CMakeFiles/Velium.dir/all:
+	$(MAKE) $(MAKESILENT) -f Velium/CMakeFiles/Velium.dir/build.make Velium/CMakeFiles/Velium.dir/depend
+	$(MAKE) $(MAKESILENT) -f Velium/CMakeFiles/Velium.dir/build.make Velium/CMakeFiles/Velium.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Built target Velium"
+.PHONY : Velium/CMakeFiles/Velium.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Velium.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/spyrex/Documents/dev/cpp/Velium/build/CMakeFiles 10
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Velium.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/spyrex/Documents/dev/cpp/Velium/build/CMakeFiles 0
-.PHONY : CMakeFiles/Velium.dir/rule
+Velium/CMakeFiles/Velium.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Velium/CMakeFiles/Velium.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles 0
+.PHONY : Velium/CMakeFiles/Velium.dir/rule
 
 # Convenience name for target.
-Velium: CMakeFiles/Velium.dir/rule
+Velium: Velium/CMakeFiles/Velium.dir/rule
 .PHONY : Velium
 
 # clean rule for target.
-CMakeFiles/Velium.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Velium.dir/build.make CMakeFiles/Velium.dir/clean
-.PHONY : CMakeFiles/Velium.dir/clean
+Velium/CMakeFiles/Velium.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Velium/CMakeFiles/Velium.dir/build.make Velium/CMakeFiles/Velium.dir/clean
+.PHONY : Velium/CMakeFiles/Velium.dir/clean
+
+#=============================================================================
+# Target rules for target Game/CMakeFiles/Game.dir
+
+# All Build rule for target.
+Game/CMakeFiles/Game.dir/all: Velium/CMakeFiles/Velium.dir/all
+	$(MAKE) $(MAKESILENT) -f Game/CMakeFiles/Game.dir/build.make Game/CMakeFiles/Game.dir/depend
+	$(MAKE) $(MAKESILENT) -f Game/CMakeFiles/Game.dir/build.make Game/CMakeFiles/Game.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles --progress-num=1,2 "Built target Game"
+.PHONY : Game/CMakeFiles/Game.dir/all
+
+# Build rule for subdir invocation for target.
+Game/CMakeFiles/Game.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Game/CMakeFiles/Game.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles 0
+.PHONY : Game/CMakeFiles/Game.dir/rule
+
+# Convenience name for target.
+Game: Game/CMakeFiles/Game.dir/rule
+.PHONY : Game
+
+# clean rule for target.
+Game/CMakeFiles/Game.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Game/CMakeFiles/Game.dir/build.make Game/CMakeFiles/Game.dir/clean
+.PHONY : Game/CMakeFiles/Game.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

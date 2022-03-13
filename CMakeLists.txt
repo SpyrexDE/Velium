@@ -1,22 +1,19 @@
 cmake_minimum_required(VERSION 3.21)
-project(Velium)
+project(VelDev)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(Velium
-        src/graphics/Window.cpp
-        src/graphics/Window.h
-        src/graphics/WindowManager.cpp
-        src/graphics/WindowManager.h
-        lib/imgui/imgui.cpp
-        lib/imgui/imgui_draw.cpp
-        lib/imgui/imgui_tables.cpp
-        lib/imgui/imgui_widgets.cpp
-        lib/imgui/imgui-SFML.cpp
-        src/graphics/DebugGUIStyle.cpp src/Velium.h)
+set(VELIUM_INCLUDE_DIR
+        ${CMAKE_CURRENT_SOURCE_DIR}/Velium)
 
-target_include_directories(Velium PUBLIC lib/imgui/)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
+add_subdirectory(Velium)
 
+include_directories(${VELIUM_INCLUDE_DIR}/src)
+message(STATUS "test: ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/Velium/src/res DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 
-target_link_libraries(Velium -lGL -lsfml-network -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio -lX11)
+add_subdirectory(Game)

@@ -1,0 +1,1 @@
+/bin/x86_64-linux-gnu-g++-11 -g CMakeFiles/Game.dir/main.cpp.o -o Game  ../Velium/libVelium.a -lGL -lsfml-network -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio -lX11 
