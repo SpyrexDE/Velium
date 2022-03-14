@@ -9,7 +9,7 @@ namespace Velium::Graphics
     {
         // Init UI theme
         ImGuiStyle *style = &ImGui::GetStyle();
-        style->ScaleAllSizes(2);
+        style->ScaleAllSizes(3);
 
         style->WindowPadding = ImVec2(15, 15);
         style->WindowRounding = 5.0f;

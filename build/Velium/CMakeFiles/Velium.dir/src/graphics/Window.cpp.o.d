@@ -290,4 +290,5 @@ Velium/CMakeFiles/Velium.dir/src/graphics/Window.cpp.o: \
  /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/semaphore.h \
  /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/DebugGUIStyle.cpp
+ /home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/DebugGUIStyle.cpp \
+ /home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/../resources/ResHandler.h

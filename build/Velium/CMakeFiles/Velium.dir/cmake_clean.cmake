@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "../lib/libVelium.a"
+  "../lib/libVelium.pdb"
   "CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.o"
   "CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.o.d"
   "CMakeFiles/Velium.dir/lib/imgui/imgui.cpp.o"
@@ -15,8 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Velium.dir/src/graphics/Window.cpp.o.d"
   "CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.o"
   "CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.o.d"
-  "libVelium.a"
-  "libVelium.pdb"
+  "CMakeFiles/Velium.dir/src/resources/ResHandler.cpp.o"
+  "CMakeFiles/Velium.dir/src/resources/ResHandler.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

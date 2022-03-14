@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libVelium.a"
+  "../lib/libVelium.a"
 )

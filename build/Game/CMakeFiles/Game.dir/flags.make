@@ -4,7 +4,7 @@
 # compile CXX with /bin/x86_64-linux-gnu-g++-11
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/spyrex/Documents/dev/cpp/VelDev/Velium -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui
+CXX_INCLUDES = -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/src -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui
 
 CXX_FLAGS = -g -std=gnu++23
 

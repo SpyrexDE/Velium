@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/DebugGUIStyle.cpp" "Velium/CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o" "gcc" "Velium/CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o.d"
   "/home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/Window.cpp" "Velium/CMakeFiles/Velium.dir/src/graphics/Window.cpp.o" "gcc" "Velium/CMakeFiles/Velium.dir/src/graphics/Window.cpp.o.d"
   "/home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/WindowManager.cpp" "Velium/CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.o" "gcc" "Velium/CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.o.d"
+  "/home/spyrex/Documents/dev/cpp/VelDev/Velium/src/resources/ResHandler.cpp" "Velium/CMakeFiles/Velium.dir/src/resources/ResHandler.cpp.o" "gcc" "Velium/CMakeFiles/Velium.dir/src/resources/ResHandler.cpp.o.d"
   )
 
 # Targets to which this target links.

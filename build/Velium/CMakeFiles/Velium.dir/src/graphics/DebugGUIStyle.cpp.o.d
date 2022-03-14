@@ -200,4 +200,5 @@ Velium/CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o: \
  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
  /usr/include/c++/11/bits/locale_conv.h \
  /usr/include/c++/11/bits/unique_ptr.h /usr/include/SFML/System/Utf.inl \
- /usr/include/SFML/System/String.inl
+ /usr/include/SFML/System/String.inl \
+ /home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/../resources/ResHandler.h

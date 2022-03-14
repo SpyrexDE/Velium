@@ -322,6 +322,30 @@ src/graphics/WindowManager.cpp.s:
 	cd /home/spyrex/Documents/dev/cpp/VelDev/build && $(MAKE) $(MAKESILENT) -f Velium/CMakeFiles/Velium.dir/build.make Velium/CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.s
 .PHONY : src/graphics/WindowManager.cpp.s
 
+src/resources/ResHandler.o: src/resources/ResHandler.cpp.o
+.PHONY : src/resources/ResHandler.o
+
+# target to build an object file
+src/resources/ResHandler.cpp.o:
+	cd /home/spyrex/Documents/dev/cpp/VelDev/build && $(MAKE) $(MAKESILENT) -f Velium/CMakeFiles/Velium.dir/build.make Velium/CMakeFiles/Velium.dir/src/resources/ResHandler.cpp.o
+.PHONY : src/resources/ResHandler.cpp.o
+
+src/resources/ResHandler.i: src/resources/ResHandler.cpp.i
+.PHONY : src/resources/ResHandler.i
+
+# target to preprocess a source file
+src/resources/ResHandler.cpp.i:
+	cd /home/spyrex/Documents/dev/cpp/VelDev/build && $(MAKE) $(MAKESILENT) -f Velium/CMakeFiles/Velium.dir/build.make Velium/CMakeFiles/Velium.dir/src/resources/ResHandler.cpp.i
+.PHONY : src/resources/ResHandler.cpp.i
+
+src/resources/ResHandler.s: src/resources/ResHandler.cpp.s
+.PHONY : src/resources/ResHandler.s
+
+# target to generate assembly for a file
+src/resources/ResHandler.cpp.s:
+	cd /home/spyrex/Documents/dev/cpp/VelDev/build && $(MAKE) $(MAKESILENT) -f Velium/CMakeFiles/Velium.dir/build.make Velium/CMakeFiles/Velium.dir/src/resources/ResHandler.cpp.s
+.PHONY : src/resources/ResHandler.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -355,6 +379,9 @@ help:
 	@echo "... src/graphics/WindowManager.o"
 	@echo "... src/graphics/WindowManager.i"
 	@echo "... src/graphics/WindowManager.s"
+	@echo "... src/resources/ResHandler.o"
+	@echo "... src/resources/ResHandler.i"
+	@echo "... src/resources/ResHandler.s"
 .PHONY : help
 
 
