@@ -207,15 +207,6 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-Game_BINARY_DIR:STATIC=/home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug/Game
-
-//Value Computed by CMake
-Game_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-Game_SOURCE_DIR:STATIC=/home/spyrex/Documents/dev/cpp/VelDev/Game
-
-//Value Computed by CMake
 VelDev_BINARY_DIR:STATIC=/home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug
 
 //Value Computed by CMake
@@ -223,24 +214,6 @@ VelDev_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 VelDev_SOURCE_DIR:STATIC=/home/spyrex/Documents/dev/cpp/VelDev
-
-//Value Computed by CMake
-VelDevv_BINARY_DIR:STATIC=/home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug
-
-//Value Computed by CMake
-VelDevv_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-VelDevv_SOURCE_DIR:STATIC=/home/spyrex/Documents/dev/cpp/VelDev
-
-//Value Computed by CMake
-Velium_BINARY_DIR:STATIC=/home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug/Velium
-
-//Value Computed by CMake
-Velium_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-Velium_SOURCE_DIR:STATIC=/home/spyrex/Documents/dev/cpp/VelDev/Velium
 
 
 ########################

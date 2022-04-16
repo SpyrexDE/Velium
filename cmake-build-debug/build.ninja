@@ -63,6 +63,20 @@ build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
 
 build edit_cache: phony CMakeFiles/edit_cache.util
 
+
+#############################################
+# Utility command for copy_engine_resources
+
+build copy_engine_resources: phony CMakeFiles/copy_engine_resources
+
+
+#############################################
+# Custom command for CMakeFiles/copy_engine_resources
+
+build CMakeFiles/copy_engine_resources | ${cmake_ninja_workdir}CMakeFiles/copy_engine_resources: CUSTOM_COMMAND
+  COMMAND = cd /home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug && /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/bin/cmake -E copy_directory /home/spyrex/Documents/dev/cpp/VelDev/Velium/resources /home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug/bin/resources/engine
+  DESC = Copying engine resources into binary directory
+
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
 # /home/spyrex/Documents/dev/cpp/VelDev/CMakeLists.txt
@@ -98,7 +112,7 @@ build Velium/edit_cache: phony Velium/CMakeFiles/edit_cache.util
 #############################################
 # Order-only phony target for Velium
 
-build cmake_object_order_depends_target_Velium: phony || Velium/CMakeFiles/Velium.dir
+build cmake_object_order_depends_target_Velium: phony || copy_engine_resources
 
 build Velium/CMakeFiles/Velium.dir/src/graphics/Window.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/Window.cpp || cmake_object_order_depends_target_Velium
   DEP_FILE = Velium/CMakeFiles/Velium.dir/src/graphics/Window.cpp.o.d
@@ -149,8 +163,8 @@ build Velium/CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.o: CXX_COMPILER__Vel
   OBJECT_DIR = Velium/CMakeFiles/Velium.dir
   OBJECT_FILE_DIR = Velium/CMakeFiles/Velium.dir/lib/imgui
 
-build Velium/CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/DebugGUIStyle.cpp || cmake_object_order_depends_target_Velium
-  DEP_FILE = Velium/CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o.d
+build Velium/CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.o: CXX_COMPILER__Velium_Debug /home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/ImGuiConfig.cpp || cmake_object_order_depends_target_Velium
+  DEP_FILE = Velium/CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.o.d
   FLAGS = -g -std=gnu++23
   INCLUDES = -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui
   OBJECT_DIR = Velium/CMakeFiles/Velium.dir
@@ -171,7 +185,7 @@ build Velium/CMakeFiles/Velium.dir/src/resources/ResHandler.cpp.o: CXX_COMPILER_
 #############################################
 # Link the static library lib/libVelium.a
 
-build lib/libVelium.a: CXX_STATIC_LIBRARY_LINKER__Velium_Debug Velium/CMakeFiles/Velium.dir/src/graphics/Window.cpp.o Velium/CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.o Velium/CMakeFiles/Velium.dir/lib/imgui/imgui.cpp.o Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_draw.cpp.o Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_tables.cpp.o Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_widgets.cpp.o Velium/CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.o Velium/CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o Velium/CMakeFiles/Velium.dir/src/resources/ResHandler.cpp.o
+build lib/libVelium.a: CXX_STATIC_LIBRARY_LINKER__Velium_Debug Velium/CMakeFiles/Velium.dir/src/graphics/Window.cpp.o Velium/CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.o Velium/CMakeFiles/Velium.dir/lib/imgui/imgui.cpp.o Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_draw.cpp.o Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_tables.cpp.o Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_widgets.cpp.o Velium/CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.o Velium/CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.o Velium/CMakeFiles/Velium.dir/src/resources/ResHandler.cpp.o || copy_engine_resources
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = Velium/CMakeFiles/Velium.dir
   POST_BUILD = :
@@ -198,6 +212,12 @@ build Game/rebuild_cache: phony Game/CMakeFiles/rebuild_cache.util
 
 
 #############################################
+# Utility command for copy_game_resources
+
+build Game/copy_game_resources: phony Game/CMakeFiles/copy_game_resources
+
+
+#############################################
 # Utility command for edit_cache
 
 build Game/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
@@ -214,14 +234,21 @@ build Game/edit_cache: phony Game/CMakeFiles/edit_cache.util
 #############################################
 # Order-only phony target for Game
 
-build cmake_object_order_depends_target_Game: phony || cmake_object_order_depends_target_Velium
+build cmake_object_order_depends_target_Game: phony || Game/copy_game_resources cmake_object_order_depends_target_Velium
 
-build Game/CMakeFiles/Game.dir/main.cpp.o: CXX_COMPILER__Game_Debug /home/spyrex/Documents/dev/cpp/VelDev/Game/main.cpp || cmake_object_order_depends_target_Game
-  DEP_FILE = Game/CMakeFiles/Game.dir/main.cpp.o.d
+build Game/CMakeFiles/Game.dir/src/main.cpp.o: CXX_COMPILER__Game_Debug /home/spyrex/Documents/dev/cpp/VelDev/Game/src/main.cpp || cmake_object_order_depends_target_Game
+  DEP_FILE = Game/CMakeFiles/Game.dir/src/main.cpp.o.d
   FLAGS = -g -std=gnu++23
   INCLUDES = -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/src -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui
   OBJECT_DIR = Game/CMakeFiles/Game.dir
-  OBJECT_FILE_DIR = Game/CMakeFiles/Game.dir
+  OBJECT_FILE_DIR = Game/CMakeFiles/Game.dir/src
+
+build Game/CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.o: CXX_COMPILER__Game_Debug /home/spyrex/Documents/dev/cpp/VelDev/Game/src/debug/ImGuiLayer.cpp || cmake_object_order_depends_target_Game
+  DEP_FILE = Game/CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.o.d
+  FLAGS = -g -std=gnu++23
+  INCLUDES = -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/src -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui
+  OBJECT_DIR = Game/CMakeFiles/Game.dir
+  OBJECT_FILE_DIR = Game/CMakeFiles/Game.dir/src/debug
 
 
 # =============================================================================
@@ -231,7 +258,7 @@ build Game/CMakeFiles/Game.dir/main.cpp.o: CXX_COMPILER__Game_Debug /home/spyrex
 #############################################
 # Link the executable bin/Game
 
-build bin/Game: CXX_EXECUTABLE_LINKER__Game_Debug Game/CMakeFiles/Game.dir/main.cpp.o | lib/libVelium.a || lib/libVelium.a
+build bin/Game: CXX_EXECUTABLE_LINKER__Game_Debug Game/CMakeFiles/Game.dir/src/main.cpp.o Game/CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.o | lib/libVelium.a || Game/copy_game_resources lib/libVelium.a
   FLAGS = -g
   LINK_LIBRARIES = lib/libVelium.a  -lGL  -lsfml-network  -lsfml-graphics  -lsfml-window  -lsfml-system  -lsfml-audio  -lX11
   OBJECT_DIR = Game/CMakeFiles/Game.dir
@@ -240,12 +267,22 @@ build bin/Game: CXX_EXECUTABLE_LINKER__Game_Debug Game/CMakeFiles/Game.dir/main.
   TARGET_FILE = bin/Game
   TARGET_PDB = Game.dbg
 
+
+#############################################
+# Custom command for Game/CMakeFiles/copy_game_resources
+
+build Game/CMakeFiles/copy_game_resources | ${cmake_ninja_workdir}Game/CMakeFiles/copy_game_resources: CUSTOM_COMMAND
+  COMMAND = cd /home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug/Game && /home/spyrex/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/bin/cmake -E copy_directory /home/spyrex/Documents/dev/cpp/VelDev/Game/resources /home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug/bin/resources/game
+  DESC = Copying game resources into binary directory
+
 # =============================================================================
 # Target aliases.
 
 build Game: phony bin/Game
 
 build Velium: phony lib/libVelium.a
+
+build copy_game_resources: phony Game/copy_game_resources
 
 build libVelium.a: phony lib/libVelium.a
 
@@ -257,14 +294,14 @@ build libVelium.a: phony lib/libVelium.a
 #############################################
 # Folder: /home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug
 
-build all: phony Velium/all Game/all
+build all: phony copy_engine_resources Velium/all Game/all
 
 # =============================================================================
 
 #############################################
 # Folder: /home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug/Game
 
-build Game/all: phony bin/Game
+build Game/all: phony Game/copy_game_resources bin/Game
 
 # =============================================================================
 

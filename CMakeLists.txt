@@ -14,6 +14,13 @@ add_subdirectory(Velium)
 
 include_directories(${VELIUM_INCLUDE_DIR}/src)
 message(STATUS "test: ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
-file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/Velium/src/res DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
+
+add_custom_target(copy_engine_resources ALL
+        COMMAND ${CMAKE_COMMAND} -E copy_directory
+        ${VELIUM_INCLUDE_DIR}/resources
+        ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/resources/engine
+        COMMENT "Copying engine resources into binary directory")
+
+add_dependencies(Velium copy_engine_resources)
 
 add_subdirectory(Game)
