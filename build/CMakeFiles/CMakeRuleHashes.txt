@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+073718df7b8baaaa4c1066e21696a35b CMakeFiles/copy_engine_resources
+237123f7e2cdc1470682975129c72f00 Game/CMakeFiles/copy_game_resources

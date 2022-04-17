@@ -1,8 +1,10 @@
+/home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles/copy_engine_resources.dir
 /home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles/edit_cache.dir
 /home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles/rebuild_cache.dir
 /home/spyrex/Documents/dev/cpp/VelDev/build/Velium/CMakeFiles/Velium.dir
 /home/spyrex/Documents/dev/cpp/VelDev/build/Velium/CMakeFiles/edit_cache.dir
 /home/spyrex/Documents/dev/cpp/VelDev/build/Velium/CMakeFiles/rebuild_cache.dir
 /home/spyrex/Documents/dev/cpp/VelDev/build/Game/CMakeFiles/Game.dir
+/home/spyrex/Documents/dev/cpp/VelDev/build/Game/CMakeFiles/copy_game_resources.dir
 /home/spyrex/Documents/dev/cpp/VelDev/build/Game/CMakeFiles/edit_cache.dir
 /home/spyrex/Documents/dev/cpp/VelDev/build/Game/CMakeFiles/rebuild_cache.dir

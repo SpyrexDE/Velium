@@ -12,11 +12,13 @@
 		"commands" : 
 		[
 			"add_library",
+			"add_dependencies",
 			"target_include_directories"
 		],
 		"files" : 
 		[
-			"Velium/CMakeLists.txt"
+			"Velium/CMakeLists.txt",
+			"CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -30,7 +32,16 @@
 				"parent" : 0
 			},
 			{
+				"file" : 1
+			},
+			{
 				"command" : 1,
+				"file" : 1,
+				"line" : 24,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
 				"file" : 0,
 				"line" : 14,
 				"parent" : 0
@@ -52,7 +63,7 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 2,
+					"backtrace" : 4,
 					"path" : "/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui"
 				}
 			],
@@ -77,6 +88,13 @@
 				9,
 				11
 			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "copy_engine_resources::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "Velium::@b59d0d12af2e7664f278",
@@ -172,7 +190,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Velium/src/graphics/DebugGUIStyle.cpp",
+			"path" : "Velium/src/graphics/ImGuiConfig.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

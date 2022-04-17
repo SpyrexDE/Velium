@@ -130,29 +130,67 @@ Game/fast:
 	cd /home/spyrex/Documents/dev/cpp/VelDev/build && $(MAKE) $(MAKESILENT) -f Game/CMakeFiles/Game.dir/build.make Game/CMakeFiles/Game.dir/build
 .PHONY : Game/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+# Convenience name for target.
+Game/CMakeFiles/copy_game_resources.dir/rule:
+	cd /home/spyrex/Documents/dev/cpp/VelDev/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Game/CMakeFiles/copy_game_resources.dir/rule
+.PHONY : Game/CMakeFiles/copy_game_resources.dir/rule
+
+# Convenience name for target.
+copy_game_resources: Game/CMakeFiles/copy_game_resources.dir/rule
+.PHONY : copy_game_resources
+
+# fast build rule for target.
+copy_game_resources/fast:
+	cd /home/spyrex/Documents/dev/cpp/VelDev/build && $(MAKE) $(MAKESILENT) -f Game/CMakeFiles/copy_game_resources.dir/build.make Game/CMakeFiles/copy_game_resources.dir/build
+.PHONY : copy_game_resources/fast
+
+src/debug/ImGuiLayer.o: src/debug/ImGuiLayer.cpp.o
+.PHONY : src/debug/ImGuiLayer.o
 
 # target to build an object file
-main.cpp.o:
-	cd /home/spyrex/Documents/dev/cpp/VelDev/build && $(MAKE) $(MAKESILENT) -f Game/CMakeFiles/Game.dir/build.make Game/CMakeFiles/Game.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/debug/ImGuiLayer.cpp.o:
+	cd /home/spyrex/Documents/dev/cpp/VelDev/build && $(MAKE) $(MAKESILENT) -f Game/CMakeFiles/Game.dir/build.make Game/CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.o
+.PHONY : src/debug/ImGuiLayer.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/debug/ImGuiLayer.i: src/debug/ImGuiLayer.cpp.i
+.PHONY : src/debug/ImGuiLayer.i
 
 # target to preprocess a source file
-main.cpp.i:
-	cd /home/spyrex/Documents/dev/cpp/VelDev/build && $(MAKE) $(MAKESILENT) -f Game/CMakeFiles/Game.dir/build.make Game/CMakeFiles/Game.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/debug/ImGuiLayer.cpp.i:
+	cd /home/spyrex/Documents/dev/cpp/VelDev/build && $(MAKE) $(MAKESILENT) -f Game/CMakeFiles/Game.dir/build.make Game/CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.i
+.PHONY : src/debug/ImGuiLayer.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/debug/ImGuiLayer.s: src/debug/ImGuiLayer.cpp.s
+.PHONY : src/debug/ImGuiLayer.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	cd /home/spyrex/Documents/dev/cpp/VelDev/build && $(MAKE) $(MAKESILENT) -f Game/CMakeFiles/Game.dir/build.make Game/CMakeFiles/Game.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/debug/ImGuiLayer.cpp.s:
+	cd /home/spyrex/Documents/dev/cpp/VelDev/build && $(MAKE) $(MAKESILENT) -f Game/CMakeFiles/Game.dir/build.make Game/CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.s
+.PHONY : src/debug/ImGuiLayer.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	cd /home/spyrex/Documents/dev/cpp/VelDev/build && $(MAKE) $(MAKESILENT) -f Game/CMakeFiles/Game.dir/build.make Game/CMakeFiles/Game.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	cd /home/spyrex/Documents/dev/cpp/VelDev/build && $(MAKE) $(MAKESILENT) -f Game/CMakeFiles/Game.dir/build.make Game/CMakeFiles/Game.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	cd /home/spyrex/Documents/dev/cpp/VelDev/build && $(MAKE) $(MAKESILENT) -f Game/CMakeFiles/Game.dir/build.make Game/CMakeFiles/Game.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -162,10 +200,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... copy_game_resources"
 	@echo "... Game"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/debug/ImGuiLayer.o"
+	@echo "... src/debug/ImGuiLayer.i"
+	@echo "... src/debug/ImGuiLayer.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

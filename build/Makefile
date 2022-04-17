@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named copy_engine_resources
+
+# Build rule for target.
+copy_engine_resources: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 copy_engine_resources
+.PHONY : copy_engine_resources
+
+# fast build rule for target.
+copy_engine_resources/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/copy_engine_resources.dir/build.make CMakeFiles/copy_engine_resources.dir/build
+.PHONY : copy_engine_resources/fast
+
+#=============================================================================
 # Target rules for targets named Velium
 
 # Build rule for target.
@@ -142,6 +155,19 @@ Game/fast:
 	$(MAKE) $(MAKESILENT) -f Game/CMakeFiles/Game.dir/build.make Game/CMakeFiles/Game.dir/build
 .PHONY : Game/fast
 
+#=============================================================================
+# Target rules for targets named copy_game_resources
+
+# Build rule for target.
+copy_game_resources: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 copy_game_resources
+.PHONY : copy_game_resources
+
+# fast build rule for target.
+copy_game_resources/fast:
+	$(MAKE) $(MAKESILENT) -f Game/CMakeFiles/copy_game_resources.dir/build.make Game/CMakeFiles/copy_game_resources.dir/build
+.PHONY : copy_game_resources/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -150,6 +176,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... copy_engine_resources"
+	@echo "... copy_game_resources"
 	@echo "... Game"
 	@echo "... Velium"
 .PHONY : help

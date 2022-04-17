@@ -13,7 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui/imgui_draw.cpp" "Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_draw.cpp.o" "gcc" "Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_draw.cpp.o.d"
   "/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui/imgui_tables.cpp" "Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_tables.cpp.o" "gcc" "Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_tables.cpp.o.d"
   "/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui/imgui_widgets.cpp" "Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_widgets.cpp.o" "gcc" "Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_widgets.cpp.o.d"
-  "/home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/DebugGUIStyle.cpp" "Velium/CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o" "gcc" "Velium/CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o.d"
+  "/home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/ImGuiConfig.cpp" "Velium/CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.o" "gcc" "Velium/CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.o.d"
   "/home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/Window.cpp" "Velium/CMakeFiles/Velium.dir/src/graphics/Window.cpp.o" "gcc" "Velium/CMakeFiles/Velium.dir/src/graphics/Window.cpp.o.d"
   "/home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/WindowManager.cpp" "Velium/CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.o" "gcc" "Velium/CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.o.d"
   "/home/spyrex/Documents/dev/cpp/VelDev/Velium/src/resources/ResHandler.cpp" "Velium/CMakeFiles/Velium.dir/src/resources/ResHandler.cpp.o" "gcc" "Velium/CMakeFiles/Velium.dir/src/resources/ResHandler.cpp.o.d"

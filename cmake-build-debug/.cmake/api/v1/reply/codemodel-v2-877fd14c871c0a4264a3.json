@@ -17,7 +17,11 @@
 						"string" : "3.21"
 					},
 					"projectIndex" : 0,
-					"source" : "."
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						2
+					]
 				},
 				{
 					"build" : "Velium",
@@ -46,7 +50,8 @@
 					"source" : "Game",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						3
 					]
 				}
 			],
@@ -64,7 +69,9 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2,
+						3
 					]
 				}
 			],
@@ -73,15 +80,29 @@
 				{
 					"directoryIndex" : 2,
 					"id" : "Game::@971b28586fb25e7ff763",
-					"jsonFile" : "target-Game-Debug-7e7608ae522a830cc14e.json",
+					"jsonFile" : "target-Game-Debug-6ae61dd6773aed559024.json",
 					"name" : "Game",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "Velium::@b59d0d12af2e7664f278",
-					"jsonFile" : "target-Velium-Debug-6344402ef3d42f5dfe9e.json",
+					"jsonFile" : "target-Velium-Debug-be57cf1b663bc1966ade.json",
 					"name" : "Velium",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "copy_engine_resources::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-copy_engine_resources-Debug-fa44c85b5dbbb111de2d.json",
+					"name" : "copy_engine_resources",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "copy_game_resources::@971b28586fb25e7ff763",
+					"jsonFile" : "target-copy_game_resources-Debug-0a59356d46a2f133366e.json",
+					"name" : "copy_game_resources",
 					"projectIndex" : 0
 				}
 			]
@@ -90,7 +111,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/spyrex/Documents/dev/cpp/VelDev/build",
+		"build" : "/home/spyrex/Documents/dev/cpp/VelDev/cmake-build-debug",
 		"source" : "/home/spyrex/Documents/dev/cpp/VelDev"
 	},
 	"version" : 

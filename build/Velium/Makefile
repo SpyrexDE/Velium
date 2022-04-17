@@ -250,29 +250,29 @@ lib/imgui/imgui_widgets.cpp.s:
 	cd /home/spyrex/Documents/dev/cpp/VelDev/build && $(MAKE) $(MAKESILENT) -f Velium/CMakeFiles/Velium.dir/build.make Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_widgets.cpp.s
 .PHONY : lib/imgui/imgui_widgets.cpp.s
 
-src/graphics/DebugGUIStyle.o: src/graphics/DebugGUIStyle.cpp.o
-.PHONY : src/graphics/DebugGUIStyle.o
+src/graphics/ImGuiConfig.o: src/graphics/ImGuiConfig.cpp.o
+.PHONY : src/graphics/ImGuiConfig.o
 
 # target to build an object file
-src/graphics/DebugGUIStyle.cpp.o:
-	cd /home/spyrex/Documents/dev/cpp/VelDev/build && $(MAKE) $(MAKESILENT) -f Velium/CMakeFiles/Velium.dir/build.make Velium/CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o
-.PHONY : src/graphics/DebugGUIStyle.cpp.o
+src/graphics/ImGuiConfig.cpp.o:
+	cd /home/spyrex/Documents/dev/cpp/VelDev/build && $(MAKE) $(MAKESILENT) -f Velium/CMakeFiles/Velium.dir/build.make Velium/CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.o
+.PHONY : src/graphics/ImGuiConfig.cpp.o
 
-src/graphics/DebugGUIStyle.i: src/graphics/DebugGUIStyle.cpp.i
-.PHONY : src/graphics/DebugGUIStyle.i
+src/graphics/ImGuiConfig.i: src/graphics/ImGuiConfig.cpp.i
+.PHONY : src/graphics/ImGuiConfig.i
 
 # target to preprocess a source file
-src/graphics/DebugGUIStyle.cpp.i:
-	cd /home/spyrex/Documents/dev/cpp/VelDev/build && $(MAKE) $(MAKESILENT) -f Velium/CMakeFiles/Velium.dir/build.make Velium/CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.i
-.PHONY : src/graphics/DebugGUIStyle.cpp.i
+src/graphics/ImGuiConfig.cpp.i:
+	cd /home/spyrex/Documents/dev/cpp/VelDev/build && $(MAKE) $(MAKESILENT) -f Velium/CMakeFiles/Velium.dir/build.make Velium/CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.i
+.PHONY : src/graphics/ImGuiConfig.cpp.i
 
-src/graphics/DebugGUIStyle.s: src/graphics/DebugGUIStyle.cpp.s
-.PHONY : src/graphics/DebugGUIStyle.s
+src/graphics/ImGuiConfig.s: src/graphics/ImGuiConfig.cpp.s
+.PHONY : src/graphics/ImGuiConfig.s
 
 # target to generate assembly for a file
-src/graphics/DebugGUIStyle.cpp.s:
-	cd /home/spyrex/Documents/dev/cpp/VelDev/build && $(MAKE) $(MAKESILENT) -f Velium/CMakeFiles/Velium.dir/build.make Velium/CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.s
-.PHONY : src/graphics/DebugGUIStyle.cpp.s
+src/graphics/ImGuiConfig.cpp.s:
+	cd /home/spyrex/Documents/dev/cpp/VelDev/build && $(MAKE) $(MAKESILENT) -f Velium/CMakeFiles/Velium.dir/build.make Velium/CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.s
+.PHONY : src/graphics/ImGuiConfig.cpp.s
 
 src/graphics/Window.o: src/graphics/Window.cpp.o
 .PHONY : src/graphics/Window.o
@@ -370,9 +370,9 @@ help:
 	@echo "... lib/imgui/imgui_widgets.o"
 	@echo "... lib/imgui/imgui_widgets.i"
 	@echo "... lib/imgui/imgui_widgets.s"
-	@echo "... src/graphics/DebugGUIStyle.o"
-	@echo "... src/graphics/DebugGUIStyle.i"
-	@echo "... src/graphics/DebugGUIStyle.s"
+	@echo "... src/graphics/ImGuiConfig.o"
+	@echo "... src/graphics/ImGuiConfig.i"
+	@echo "... src/graphics/ImGuiConfig.s"
 	@echo "... src/graphics/Window.o"
 	@echo "... src/graphics/Window.i"
 	@echo "... src/graphics/Window.s"

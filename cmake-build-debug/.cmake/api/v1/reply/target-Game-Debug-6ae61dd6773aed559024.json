@@ -12,6 +12,7 @@
 		[
 			"add_executable",
 			"target_link_libraries",
+			"add_dependencies",
 			"include_directories"
 		],
 		"files" : 
@@ -37,13 +38,19 @@
 				"parent" : 0
 			},
 			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
 				"file" : 1
 			},
 			{
-				"command" : 2,
+				"command" : 3,
 				"file" : 1,
 				"line" : 15,
-				"parent" : 3
+				"parent" : 4
 			}
 		]
 	},
@@ -62,7 +69,7 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 4,
+					"backtrace" : 5,
 					"path" : "/home/spyrex/Documents/dev/cpp/VelDev/Velium/src"
 				},
 				{
@@ -81,7 +88,8 @@
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		}
 	],
@@ -90,6 +98,10 @@
 		{
 			"backtrace" : 2,
 			"id" : "Velium::@b59d0d12af2e7664f278"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "copy_game_resources::@971b28586fb25e7ff763"
 		}
 	],
 	"id" : "Game::@971b28586fb25e7ff763",
@@ -107,7 +119,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "../lib/libVelium.a",
+				"fragment" : "lib/libVelium.a",
 				"role" : "libraries"
 			},
 			{
@@ -154,7 +166,15 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				2
 			]
 		}
 	],
@@ -163,8 +183,19 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Game/main.cpp",
+			"path" : "Game/src/main.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Game/src/debug/ImGuiLayer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Game/src/debug/ImGuiLayer.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

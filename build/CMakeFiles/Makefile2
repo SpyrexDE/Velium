@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = /home/spyrex/Documents/dev/cpp/VelDev/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/copy_engine_resources.dir/all
 all: Velium/all
 all: Game/all
 .PHONY : all
@@ -73,6 +74,7 @@ preinstall: Game/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/copy_engine_resources.dir/clean
 clean: Velium/clean
 clean: Game/clean
 .PHONY : clean
@@ -82,6 +84,7 @@ clean: Game/clean
 
 # Recursive "all" directory target.
 Game/all: Game/CMakeFiles/Game.dir/all
+Game/all: Game/CMakeFiles/copy_game_resources.dir/all
 .PHONY : Game/all
 
 # Recursive "preinstall" directory target.
@@ -90,6 +93,7 @@ Game/preinstall:
 
 # Recursive "clean" directory target.
 Game/clean: Game/CMakeFiles/Game.dir/clean
+Game/clean: Game/CMakeFiles/copy_game_resources.dir/clean
 .PHONY : Game/clean
 
 #=============================================================================
@@ -108,18 +112,44 @@ Velium/clean: Velium/CMakeFiles/Velium.dir/clean
 .PHONY : Velium/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/copy_engine_resources.dir
+
+# All Build rule for target.
+CMakeFiles/copy_engine_resources.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/copy_engine_resources.dir/build.make CMakeFiles/copy_engine_resources.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/copy_engine_resources.dir/build.make CMakeFiles/copy_engine_resources.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles --progress-num=14 "Built target copy_engine_resources"
+.PHONY : CMakeFiles/copy_engine_resources.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/copy_engine_resources.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/copy_engine_resources.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles 0
+.PHONY : CMakeFiles/copy_engine_resources.dir/rule
+
+# Convenience name for target.
+copy_engine_resources: CMakeFiles/copy_engine_resources.dir/rule
+.PHONY : copy_engine_resources
+
+# clean rule for target.
+CMakeFiles/copy_engine_resources.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/copy_engine_resources.dir/build.make CMakeFiles/copy_engine_resources.dir/clean
+.PHONY : CMakeFiles/copy_engine_resources.dir/clean
+
+#=============================================================================
 # Target rules for target Velium/CMakeFiles/Velium.dir
 
 # All Build rule for target.
-Velium/CMakeFiles/Velium.dir/all:
+Velium/CMakeFiles/Velium.dir/all: CMakeFiles/copy_engine_resources.dir/all
 	$(MAKE) $(MAKESILENT) -f Velium/CMakeFiles/Velium.dir/build.make Velium/CMakeFiles/Velium.dir/depend
 	$(MAKE) $(MAKESILENT) -f Velium/CMakeFiles/Velium.dir/build.make Velium/CMakeFiles/Velium.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12 "Built target Velium"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13 "Built target Velium"
 .PHONY : Velium/CMakeFiles/Velium.dir/all
 
 # Build rule for subdir invocation for target.
 Velium/CMakeFiles/Velium.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Velium/CMakeFiles/Velium.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles 0
 .PHONY : Velium/CMakeFiles/Velium.dir/rule
@@ -138,14 +168,15 @@ Velium/CMakeFiles/Velium.dir/clean:
 
 # All Build rule for target.
 Game/CMakeFiles/Game.dir/all: Velium/CMakeFiles/Velium.dir/all
+Game/CMakeFiles/Game.dir/all: Game/CMakeFiles/copy_game_resources.dir/all
 	$(MAKE) $(MAKESILENT) -f Game/CMakeFiles/Game.dir/build.make Game/CMakeFiles/Game.dir/depend
 	$(MAKE) $(MAKESILENT) -f Game/CMakeFiles/Game.dir/build.make Game/CMakeFiles/Game.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles --progress-num=1,2 "Built target Game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles --progress-num=1,2,3 "Built target Game"
 .PHONY : Game/CMakeFiles/Game.dir/all
 
 # Build rule for subdir invocation for target.
 Game/CMakeFiles/Game.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Game/CMakeFiles/Game.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles 0
 .PHONY : Game/CMakeFiles/Game.dir/rule
@@ -158,6 +189,32 @@ Game: Game/CMakeFiles/Game.dir/rule
 Game/CMakeFiles/Game.dir/clean:
 	$(MAKE) $(MAKESILENT) -f Game/CMakeFiles/Game.dir/build.make Game/CMakeFiles/Game.dir/clean
 .PHONY : Game/CMakeFiles/Game.dir/clean
+
+#=============================================================================
+# Target rules for target Game/CMakeFiles/copy_game_resources.dir
+
+# All Build rule for target.
+Game/CMakeFiles/copy_game_resources.dir/all:
+	$(MAKE) $(MAKESILENT) -f Game/CMakeFiles/copy_game_resources.dir/build.make Game/CMakeFiles/copy_game_resources.dir/depend
+	$(MAKE) $(MAKESILENT) -f Game/CMakeFiles/copy_game_resources.dir/build.make Game/CMakeFiles/copy_game_resources.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles --progress-num=15 "Built target copy_game_resources"
+.PHONY : Game/CMakeFiles/copy_game_resources.dir/all
+
+# Build rule for subdir invocation for target.
+Game/CMakeFiles/copy_game_resources.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Game/CMakeFiles/copy_game_resources.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles 0
+.PHONY : Game/CMakeFiles/copy_game_resources.dir/rule
+
+# Convenience name for target.
+copy_game_resources: Game/CMakeFiles/copy_game_resources.dir/rule
+.PHONY : copy_game_resources
+
+# clean rule for target.
+Game/CMakeFiles/copy_game_resources.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Game/CMakeFiles/copy_game_resources.dir/build.make Game/CMakeFiles/copy_game_resources.dir/clean
+.PHONY : Game/CMakeFiles/copy_game_resources.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

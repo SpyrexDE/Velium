@@ -47,6 +47,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/copy_engine_resources.dir/DependInfo.cmake"
   "Velium/CMakeFiles/Velium.dir/DependInfo.cmake"
   "Game/CMakeFiles/Game.dir/DependInfo.cmake"
+  "Game/CMakeFiles/copy_game_resources.dir/DependInfo.cmake"
   )

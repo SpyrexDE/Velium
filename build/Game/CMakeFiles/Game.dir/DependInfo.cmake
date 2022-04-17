@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/spyrex/Documents/dev/cpp/VelDev/Game/main.cpp" "Game/CMakeFiles/Game.dir/main.cpp.o" "gcc" "Game/CMakeFiles/Game.dir/main.cpp.o.d"
+  "/home/spyrex/Documents/dev/cpp/VelDev/Game/src/debug/ImGuiLayer.cpp" "Game/CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.o" "gcc" "Game/CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.o.d"
+  "/home/spyrex/Documents/dev/cpp/VelDev/Game/src/main.cpp" "Game/CMakeFiles/Game.dir/src/main.cpp.o" "gcc" "Game/CMakeFiles/Game.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links.

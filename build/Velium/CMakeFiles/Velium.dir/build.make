@@ -167,19 +167,19 @@ Velium/CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.s"
 	cd /home/spyrex/Documents/dev/cpp/VelDev/build/Velium && /bin/x86_64-linux-gnu-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui/imgui-SFML.cpp -o CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.s
 
-Velium/CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o: Velium/CMakeFiles/Velium.dir/flags.make
-Velium/CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o: ../Velium/src/graphics/DebugGUIStyle.cpp
-Velium/CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o: Velium/CMakeFiles/Velium.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object Velium/CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o"
-	cd /home/spyrex/Documents/dev/cpp/VelDev/build/Velium && /bin/x86_64-linux-gnu-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Velium/CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o -MF CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o.d -o CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o -c /home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/DebugGUIStyle.cpp
+Velium/CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.o: Velium/CMakeFiles/Velium.dir/flags.make
+Velium/CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.o: ../Velium/src/graphics/ImGuiConfig.cpp
+Velium/CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.o: Velium/CMakeFiles/Velium.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object Velium/CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.o"
+	cd /home/spyrex/Documents/dev/cpp/VelDev/build/Velium && /bin/x86_64-linux-gnu-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Velium/CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.o -MF CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.o.d -o CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.o -c /home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/ImGuiConfig.cpp
 
-Velium/CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.i"
-	cd /home/spyrex/Documents/dev/cpp/VelDev/build/Velium && /bin/x86_64-linux-gnu-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/DebugGUIStyle.cpp > CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.i
+Velium/CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.i"
+	cd /home/spyrex/Documents/dev/cpp/VelDev/build/Velium && /bin/x86_64-linux-gnu-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/ImGuiConfig.cpp > CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.i
 
-Velium/CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.s"
-	cd /home/spyrex/Documents/dev/cpp/VelDev/build/Velium && /bin/x86_64-linux-gnu-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/DebugGUIStyle.cpp -o CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.s
+Velium/CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.s"
+	cd /home/spyrex/Documents/dev/cpp/VelDev/build/Velium && /bin/x86_64-linux-gnu-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/ImGuiConfig.cpp -o CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.s
 
 Velium/CMakeFiles/Velium.dir/src/resources/ResHandler.cpp.o: Velium/CMakeFiles/Velium.dir/flags.make
 Velium/CMakeFiles/Velium.dir/src/resources/ResHandler.cpp.o: ../Velium/src/resources/ResHandler.cpp
@@ -204,7 +204,7 @@ Velium_OBJECTS = \
 "CMakeFiles/Velium.dir/lib/imgui/imgui_tables.cpp.o" \
 "CMakeFiles/Velium.dir/lib/imgui/imgui_widgets.cpp.o" \
 "CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.o" \
-"CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o" \
+"CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.o" \
 "CMakeFiles/Velium.dir/src/resources/ResHandler.cpp.o"
 
 # External object files for target Velium
@@ -217,7 +217,7 @@ lib/libVelium.a: Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_draw.cpp.o
 lib/libVelium.a: Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_tables.cpp.o
 lib/libVelium.a: Velium/CMakeFiles/Velium.dir/lib/imgui/imgui_widgets.cpp.o
 lib/libVelium.a: Velium/CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.o
-lib/libVelium.a: Velium/CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o
+lib/libVelium.a: Velium/CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.o
 lib/libVelium.a: Velium/CMakeFiles/Velium.dir/src/resources/ResHandler.cpp.o
 lib/libVelium.a: Velium/CMakeFiles/Velium.dir/build.make
 lib/libVelium.a: Velium/CMakeFiles/Velium.dir/link.txt

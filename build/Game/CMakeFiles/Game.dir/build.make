@@ -69,32 +69,48 @@ include Game/CMakeFiles/Game.dir/progress.make
 # Include the compile flags for this target's objects.
 include Game/CMakeFiles/Game.dir/flags.make
 
-Game/CMakeFiles/Game.dir/main.cpp.o: Game/CMakeFiles/Game.dir/flags.make
-Game/CMakeFiles/Game.dir/main.cpp.o: ../Game/main.cpp
-Game/CMakeFiles/Game.dir/main.cpp.o: Game/CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Game/CMakeFiles/Game.dir/main.cpp.o"
-	cd /home/spyrex/Documents/dev/cpp/VelDev/build/Game && /bin/x86_64-linux-gnu-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Game/CMakeFiles/Game.dir/main.cpp.o -MF CMakeFiles/Game.dir/main.cpp.o.d -o CMakeFiles/Game.dir/main.cpp.o -c /home/spyrex/Documents/dev/cpp/VelDev/Game/main.cpp
+Game/CMakeFiles/Game.dir/src/main.cpp.o: Game/CMakeFiles/Game.dir/flags.make
+Game/CMakeFiles/Game.dir/src/main.cpp.o: ../Game/src/main.cpp
+Game/CMakeFiles/Game.dir/src/main.cpp.o: Game/CMakeFiles/Game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Game/CMakeFiles/Game.dir/src/main.cpp.o"
+	cd /home/spyrex/Documents/dev/cpp/VelDev/build/Game && /bin/x86_64-linux-gnu-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Game/CMakeFiles/Game.dir/src/main.cpp.o -MF CMakeFiles/Game.dir/src/main.cpp.o.d -o CMakeFiles/Game.dir/src/main.cpp.o -c /home/spyrex/Documents/dev/cpp/VelDev/Game/src/main.cpp
 
-Game/CMakeFiles/Game.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/main.cpp.i"
-	cd /home/spyrex/Documents/dev/cpp/VelDev/build/Game && /bin/x86_64-linux-gnu-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/spyrex/Documents/dev/cpp/VelDev/Game/main.cpp > CMakeFiles/Game.dir/main.cpp.i
+Game/CMakeFiles/Game.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/src/main.cpp.i"
+	cd /home/spyrex/Documents/dev/cpp/VelDev/build/Game && /bin/x86_64-linux-gnu-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/spyrex/Documents/dev/cpp/VelDev/Game/src/main.cpp > CMakeFiles/Game.dir/src/main.cpp.i
 
-Game/CMakeFiles/Game.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/main.cpp.s"
-	cd /home/spyrex/Documents/dev/cpp/VelDev/build/Game && /bin/x86_64-linux-gnu-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/spyrex/Documents/dev/cpp/VelDev/Game/main.cpp -o CMakeFiles/Game.dir/main.cpp.s
+Game/CMakeFiles/Game.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/main.cpp.s"
+	cd /home/spyrex/Documents/dev/cpp/VelDev/build/Game && /bin/x86_64-linux-gnu-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/spyrex/Documents/dev/cpp/VelDev/Game/src/main.cpp -o CMakeFiles/Game.dir/src/main.cpp.s
+
+Game/CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.o: Game/CMakeFiles/Game.dir/flags.make
+Game/CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.o: ../Game/src/debug/ImGuiLayer.cpp
+Game/CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.o: Game/CMakeFiles/Game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Game/CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.o"
+	cd /home/spyrex/Documents/dev/cpp/VelDev/build/Game && /bin/x86_64-linux-gnu-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Game/CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.o -MF CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.o.d -o CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.o -c /home/spyrex/Documents/dev/cpp/VelDev/Game/src/debug/ImGuiLayer.cpp
+
+Game/CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.i"
+	cd /home/spyrex/Documents/dev/cpp/VelDev/build/Game && /bin/x86_64-linux-gnu-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/spyrex/Documents/dev/cpp/VelDev/Game/src/debug/ImGuiLayer.cpp > CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.i
+
+Game/CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.s"
+	cd /home/spyrex/Documents/dev/cpp/VelDev/build/Game && /bin/x86_64-linux-gnu-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/spyrex/Documents/dev/cpp/VelDev/Game/src/debug/ImGuiLayer.cpp -o CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.s
 
 # Object files for target Game
 Game_OBJECTS = \
-"CMakeFiles/Game.dir/main.cpp.o"
+"CMakeFiles/Game.dir/src/main.cpp.o" \
+"CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.o"
 
 # External object files for target Game
 Game_EXTERNAL_OBJECTS =
 
-bin/Game: Game/CMakeFiles/Game.dir/main.cpp.o
+bin/Game: Game/CMakeFiles/Game.dir/src/main.cpp.o
+bin/Game: Game/CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.o
 bin/Game: Game/CMakeFiles/Game.dir/build.make
 bin/Game: lib/libVelium.a
 bin/Game: Game/CMakeFiles/Game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/Game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/spyrex/Documents/dev/cpp/VelDev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../bin/Game"
 	cd /home/spyrex/Documents/dev/cpp/VelDev/build/Game && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

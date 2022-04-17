@@ -36,8 +36,8 @@
 },
 {
   "directory": "/home/spyrex/Documents/dev/cpp/VelDev/build/Velium",
-  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui -g -std=gnu++23 -o CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.o -c /home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/DebugGUIStyle.cpp",
-  "file": "/home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/DebugGUIStyle.cpp"
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui -g -std=gnu++23 -o CMakeFiles/Velium.dir/src/graphics/ImGuiConfig.cpp.o -c /home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/ImGuiConfig.cpp",
+  "file": "/home/spyrex/Documents/dev/cpp/VelDev/Velium/src/graphics/ImGuiConfig.cpp"
 },
 {
   "directory": "/home/spyrex/Documents/dev/cpp/VelDev/build/Velium",
@@ -46,7 +46,12 @@
 },
 {
   "directory": "/home/spyrex/Documents/dev/cpp/VelDev/build/Game",
-  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/src -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui -g -std=gnu++23 -o CMakeFiles/Game.dir/main.cpp.o -c /home/spyrex/Documents/dev/cpp/VelDev/Game/main.cpp",
-  "file": "/home/spyrex/Documents/dev/cpp/VelDev/Game/main.cpp"
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/src -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui -g -std=gnu++23 -o CMakeFiles/Game.dir/src/main.cpp.o -c /home/spyrex/Documents/dev/cpp/VelDev/Game/src/main.cpp",
+  "file": "/home/spyrex/Documents/dev/cpp/VelDev/Game/src/main.cpp"
+},
+{
+  "directory": "/home/spyrex/Documents/dev/cpp/VelDev/build/Game",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/src -I/home/spyrex/Documents/dev/cpp/VelDev/Velium/lib/imgui -g -std=gnu++23 -o CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.o -c /home/spyrex/Documents/dev/cpp/VelDev/Game/src/debug/ImGuiLayer.cpp",
+  "file": "/home/spyrex/Documents/dev/cpp/VelDev/Game/src/debug/ImGuiLayer.cpp"
 }
 ]
