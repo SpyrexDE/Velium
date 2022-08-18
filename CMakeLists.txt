@@ -17,7 +17,7 @@ message(STATUS "test: ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
 
 add_custom_target(copy_engine_resources ALL
         COMMAND ${CMAKE_COMMAND} -E copy_directory
-        ${VELIUM_INCLUDE_DIR}/resources
+        ${VELIUM_INCLUDE_DIR}/src/res
         ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/resources/engine
         COMMENT "Copying engine resources into binary directory")
 

@@ -11,6 +11,6 @@ add_library(Velium STATIC
         lib/imgui/imgui-SFML.cpp
         src/graphics/DebugGUIStyle.cpp src/Velium.h src/resources/ResHandler.cpp src/resources/ResHandler.h)
 
-target_include_directories(Velium PUBLIC lib/imgui/)
+target_include_directories(Velium PUBLIC lib/imgui/ lib/sfml/include/)
 
 target_link_libraries(Velium -lGL -lsfml-network -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio -lX11)

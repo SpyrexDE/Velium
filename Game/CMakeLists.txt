@@ -6,7 +6,7 @@ target_link_libraries(Game Velium)
 
 add_custom_target(copy_game_resources ALL
         COMMAND ${CMAKE_COMMAND} -E copy_directory
-        ${CMAKE_CURRENT_SOURCE_DIR}/resources
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/res
         ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/resources/game
         COMMENT "Copying game resources into binary directory")
 
