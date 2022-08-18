@@ -23,4 +23,12 @@ add_custom_target(copy_engine_resources ALL
 
 add_dependencies(Velium copy_engine_resources)
 
+add_custom_target(copy_engine_dependencies ALL
+        COMMAND ${CMAKE_COMMAND} -E copy_directory
+        ${VELIUM_INCLUDE_DIR}/lib/sfml/bin
+        ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}
+        COMMENT "Copying engine dependencies into binary directory")
+
+add_dependencies(Velium copy_engine_dependencies)
+
 add_subdirectory(Game)

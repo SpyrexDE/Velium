@@ -13,4 +13,14 @@ add_library(Velium STATIC
 
 target_include_directories(Velium PUBLIC lib/imgui/ lib/sfml/include/)
 
-target_link_libraries(Velium -lGL -lsfml-network -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio -lX11)
+find_package(OpenGL REQUIRED)
+
+# find SFML 2.5
+set(SFML_DIR lib/sfml/lib/cmake/SFML/)
+find_package(SFML 2.5 COMPONENTS graphics window system audio network REQUIRED)
+
+if(WIN32 OR WIN64)
+  target_link_libraries(Velium opengl32 sfml-network sfml-graphics sfml-window sfml-system sfml-audio)
+else()
+  target_link_libraries(Velium -lGL -lsfml-network -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio -lX11)
+endif()

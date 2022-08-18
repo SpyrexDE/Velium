@@ -5,7 +5,7 @@
 #include "SFML/Window.hpp"
 #include "imgui-SFML.h"
 #include <list>
-
+#include <functional>
 
 namespace Velium::Graphics {
 
@@ -23,6 +23,8 @@ namespace Velium::Graphics {
 
         sf::Vector2<float> getRelativeMousePos();
 
+        std::function<void(Window* window)> imGuiDrawFunc;
+
     private:
         sf::Clock m_delta_clock;
         std::vector<std::unique_ptr<sf::Drawable>> drawList{};
@@ -35,8 +37,6 @@ namespace Velium::Graphics {
 
         void addToDrawList(sf::Drawable* item);
         void removeFromDrawList(sf::Drawable* item);
-
-
 
     private:
         void handleClose(sf::Event& event);

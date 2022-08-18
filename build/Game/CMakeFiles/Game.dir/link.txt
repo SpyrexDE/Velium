@@ -1,1 +1,3 @@
-/bin/x86_64-linux-gnu-g++-11 -g CMakeFiles/Game.dir/src/main.cpp.o CMakeFiles/Game.dir/src/debug/ImGuiLayer.cpp.o -o ../bin/Game  ../lib/libVelium.a -lGL -lsfml-network -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio -lX11 
+D:\ProgramData\CMake\bin\cmake.exe -E rm -f CMakeFiles\Game.dir/objects.a
+D:\MinGW\bin\ar.exe qc CMakeFiles\Game.dir/objects.a @CMakeFiles\Game.dir\objects1.rsp
+D:\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Game.dir/objects.a -Wl,--no-whole-archive -o ..\bin\Game.exe -Wl,--out-implib,..\lib\libGame.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Game.dir\linklibs.rsp

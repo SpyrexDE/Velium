@@ -15,4 +15,5 @@ void ImGuiLayer::draw(Velium::Graphics::Window* window)
     if(ImGui::Button("Test")) {
         std::cout << "wow" <<std::endl;
     }
+    ImGui::End();
 }

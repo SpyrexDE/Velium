@@ -1,7 +1,8 @@
 #include <chrono>
 #include <thread>
 #include "graphics/Window.h"
-
+#include "Velium.h"
+#include "graphics/WindowManager.h"
 #include "debug/ImGuiLayer.h"
 
 int main()
@@ -13,7 +14,7 @@ int main()
     window.addToDrawList(new sf::CircleShape(100.f));
     window.imGuiDrawFunc = ImGuiLayer::draw;
 
-    std::this_thread::sleep_for(std::chrono::milliseconds(20000000000));
+    Velium::Engine::start();
 
     return 0;
 }

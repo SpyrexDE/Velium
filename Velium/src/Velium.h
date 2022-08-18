@@ -1,7 +1,8 @@
 #pragma once
-#include <X11/Xlib.h>
-#include <iostream>
-
+#ifdef __linux__
+    #include <X11/Xlib.h>
+#endif
+#include "graphics/WindowManager.h"
 namespace Velium
 {
     class Engine
@@ -10,7 +11,13 @@ namespace Velium
     public:
         Engine()
         {
-            XInitThreads();
+            #ifdef __linux__
+                XInitThreads();
+            #endif
+        }
+        static void start()
+        {
+            Graphics::WindowManager::init();
         }
     };
 }

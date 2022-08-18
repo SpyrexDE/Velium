@@ -19,11 +19,6 @@ namespace Velium::Graphics
     void WindowManager::addWindow(Window* window)
     {
         WindowManager::m_windows.push_back(window);
-
-        // Start updateloop
-        if(!WindowManager::running)
-            thread =  std::thread(WindowManager::init);
-
     }
 
     void WindowManager::removeWindow(Window* window)

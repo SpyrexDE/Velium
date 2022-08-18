@@ -31,7 +31,10 @@ namespace Velium::Graphics {
 
         setPosition((sf::Vector2<int>)pos - (sf::Vector2<int>)sf::RenderWindow::getSize() / 2);
 
-
+        sf::Cursor cursor;
+        if (cursor.loadFromSystem(sf::Cursor::Hand))
+            this->setMouseCursor(cursor);
+        
         // Add to WindowManager
         WindowManager::addWindow(this);
     }
@@ -71,11 +74,7 @@ namespace Velium::Graphics {
 
 
         ImGui::SFML::SetCurrentWindow(*this);
-        ImGui::Begin("Hello, world!");
-        if(ImGui::Button("Test")) {
-            std::cout << "wow" <<std::endl;
-        }
-        ImGui::End();
+        this->imGuiDrawFunc(this);
 
 
         ImGui::SFML::Render(*this);
@@ -85,7 +84,10 @@ namespace Velium::Graphics {
     void Window::handleClose(sf::Event& event)
     {
         if (event.type == sf::Event::Closed)
+        {
+            WindowManager::removeWindow(this);
             sf::RenderWindow::close();
+        }
     }
 
     void Window::handleResize(sf::Event event)

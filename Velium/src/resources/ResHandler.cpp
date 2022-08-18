@@ -1,9 +1,11 @@
 #include <sys/param.h>
 #include "ResHandler.h"
+#include <unistd.h>
+#include <iostream>
 
 const char* ResHandler::GetFilePath(std::string path)
 {
-    path = get_working_path().append("/res/" + path);
+    path = get_working_path().append("/resources/engine/" + path);
     return path.c_str();
 }
 
