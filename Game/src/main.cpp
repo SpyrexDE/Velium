@@ -4,6 +4,7 @@
 #include "Velium.h"
 #include "graphics/WindowManager.h"
 #include "debug/ImGuiLayer.h"
+#include "resources/ResHandler.h"
 
 int main()
 {
@@ -14,6 +15,11 @@ int main()
     window.addToDrawList(new sf::CircleShape(100.f));
     window.imGuiDrawFunc = ImGuiLayer::draw;
 
+    sf::Image icon;
+    icon.loadFromFile(ResHandler::GetFilePath("images/pepe.jpg"));
+    window.setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
+
+    // Start the engine
     Velium::Engine::start();
 
     return 0;

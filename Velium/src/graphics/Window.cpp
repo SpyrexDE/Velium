@@ -12,9 +12,9 @@ namespace Velium::Graphics {
         if(!ImGui::SFML::Init(*this, false))
             std::cout << "Error while initializing ImGui!";
 
-        this->setActive(false);
-
         Velium::Graphics::applyDebugGuiStyle();
+
+        this->setActive(false);
 
         // Set window position
         sf::Vector2<float> pos;
@@ -73,9 +73,11 @@ namespace Velium::Graphics {
         }
 
 
-        ImGui::SFML::SetCurrentWindow(*this);
-        this->imGuiDrawFunc(this);
-
+        if(this->imGuiDrawFunc)
+        {
+            ImGui::SFML::SetCurrentWindow(*this);
+            this->imGuiDrawFunc(this);
+        }
 
         ImGui::SFML::Render(*this);
         sf::RenderWindow::display();
