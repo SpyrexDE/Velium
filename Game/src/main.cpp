@@ -10,9 +10,11 @@ int main()
 {
     using Velium::Graphics::Window;
 
-    Window window("Game", 600, 1200, Velium::Graphics::Window::WINDOW_POSITION_CENTER);
+    Window window("Game", 600, 1200, Velium::Graphics::Window::WINDOW_POSITION_TOP_LEFT);
 
-    window.addToDrawList(new sf::CircleShape(100.f));
+    sf::CircleShape* shape = new sf::CircleShape(100.f);
+
+    window.addToDrawList(shape);
     window.imGuiDrawFunc = ImGuiLayer::draw;
 
     sf::Image icon;
