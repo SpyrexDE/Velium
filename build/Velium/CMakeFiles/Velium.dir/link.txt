@@ -1,2 +1,0 @@
-D:\MinGW\bin\ar.exe qc ..\lib\libVelium.a CMakeFiles/Velium.dir/src/graphics/Window.cpp.obj CMakeFiles/Velium.dir/src/graphics/WindowManager.cpp.obj CMakeFiles/Velium.dir/lib/imgui/imgui.cpp.obj CMakeFiles/Velium.dir/lib/imgui/imgui_draw.cpp.obj CMakeFiles/Velium.dir/lib/imgui/imgui_tables.cpp.obj CMakeFiles/Velium.dir/lib/imgui/imgui_widgets.cpp.obj "CMakeFiles/Velium.dir/lib/imgui/imgui-SFML.cpp.obj" CMakeFiles/Velium.dir/src/graphics/DebugGUIStyle.cpp.obj CMakeFiles/Velium.dir/src/resources/ResHandler.cpp.obj
-D:\MinGW\bin\ranlib.exe ..\lib\libVelium.a
